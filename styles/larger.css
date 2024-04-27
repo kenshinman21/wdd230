@@ -1,0 +1,31 @@
+@media screen and (min-width: 650px) {
+    body{
+        font-family: "Inclusive Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    main {
+      width: 80%; 
+      margin: 0 auto;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+       flex: none;
+       margin-right: 10px;
+       margin-bottom: 0;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+    .card section {
+        box-shadow: 1px 1px 10px black;
+    }
+}

@@ -1,0 +1,84 @@
+/* For small Screens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inclusive Sans", sans-serif;
+    font-weight: 400;
+}
+footer, nav {
+    background-color: pink;
+}
+header, main{
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: blue;
+}
+nav{
+    max-width: 800px;
+    margin: 0 auto;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+nav a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover{
+    border:1px solid black;
+    text-decoration: underline;
+}
+.active{
+    color:blue;
+}
+.card {
+    margin: 1rem 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+}
+.card section {
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.card h2{
+    background-color: pink;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+}
+.card p{
+    padding: 10px;
+}
+h1{
+    font-weight: 100;
+    text-align: center;
+}

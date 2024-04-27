@@ -52,16 +52,12 @@ nav a{
     border-radius: 5px;
     box-shadow: 0 5px black;
 }
-nav a:hover{
+nav a:hover, nav a.active{
     border:1px solid black;
     text-decoration: underline;
     box-shadow: 0 2px black;
     transform: translateY(3px);
-    background-color: grey;}
-nav a.active{
-    box-shadow: 0 2px blue;
-    background-color: black;
-    transform: translateY(3px);
+    background-color: blue;
 }
 .active{
     color:blue;

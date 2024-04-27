@@ -57,12 +57,11 @@ nav a:hover{
     text-decoration: underline;
     box-shadow: 0 2px black;
     transform: translateY(3px);
-    background-color: grey;
+    background-color: grey;}
 nav a.active{
     box-shadow: 0 2px blue;
-    background-color: pink;
+    background-color: black;
     transform: translateY(3px);
-}
 }
 .active{
     color:blue;

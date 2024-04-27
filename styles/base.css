@@ -60,7 +60,7 @@ nav a:hover, nav a.active{
     background-color: blue;
 }
 .active{
-    color:blue;
+    color:yellow;
 }
 .card {
     margin: 1rem 2vw;

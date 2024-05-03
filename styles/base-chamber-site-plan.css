@@ -5,12 +5,16 @@ body, html {
     background-color: #8B4513; /* Brown background */
 }
 
+h1{
+    color: white;
+}
+
 #homeButton {
     position: absolute;
     top: 10px;
     left: 10px;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,11 +49,12 @@ main {
     justify-content: center;
     align-content: center;
     align-items: center;
+    color: white;
 }
 
 footer {
     text-align: center;
-    background-color: #007BFF;
+    background-color: green;
     color: white;
     padding: 10px;
     position: fixed;
@@ -64,4 +69,5 @@ footer {
 }
 p{
     font-family: "Arial", sans-serif;
+    color: white;
 }

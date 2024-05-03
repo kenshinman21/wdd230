@@ -57,7 +57,7 @@ nav a:hover, nav a.active{
     text-decoration: underline;
     box-shadow: 0 2px black;
     transform: translateY(3px);
-    background-color: blue;
+    background-color: #007BFF;
 }
 .active{
     color:yellow;
@@ -76,7 +76,7 @@ nav a:hover, nav a.active{
     margin: 1rem 0;
 }
 .card h2{
-    background-color: pink;
+    background-color: #AA336A;
     color: whitesmoke;
     display: block;
     text-align: center;

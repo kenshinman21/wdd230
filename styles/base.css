@@ -9,8 +9,8 @@ body{
     font-family: "Inclusive Sans", sans-serif;
     font-weight: 400;
 }
-footer, nav {
-    background-color: #AA336A;
+nav {
+    background-color: #AA336A; /* darker pink helps with the constrast */
 }
 header, main{
     margin: 0 auto;
@@ -60,7 +60,7 @@ nav a:hover, nav a.active{
     background-color: #007BFF;
 }
 .active{
-    color:yellow;
+    color:black;
 }
 .card {
     margin: 1rem 2vw;
@@ -69,7 +69,7 @@ nav a:hover, nav a.active{
     column-gap: 10px;
 }
 .card section {
-    border: 1px solid blue;
+    border: 1px solid #007BFF;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
@@ -88,4 +88,7 @@ nav a:hover, nav a.active{
 h1{
     font-weight: 100;
     text-align: center;
+}
+footer {
+    background-color: #007BFF;
 }

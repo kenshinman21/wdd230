@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+        grid-gap: 20px; /* Space between columns and rows */
+        padding: 20px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section {
+        background-color: #008000; /* Green background */
+        padding: 20px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /* Shadow for 3D effect */
+        border: 1px solid #004400; /* Slight border for more definition */
+        margin-bottom: 20px; /* Ensures equal vertical spacing between sections */
+    }
+}

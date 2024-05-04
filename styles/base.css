@@ -10,7 +10,8 @@ body{
     font-weight: 400;
 }
 nav {
-    background-color: #AA336A; /* darker pink helps with the constrast */
+    background-color: #FFC0CB; /* darker pink helps with the constrast */
+    color: black;
 }
 header, main{
     margin: 0 auto;
@@ -44,7 +45,7 @@ nav li {
 }
 nav a{
     display:block;
-    color:white;
+    color:black;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -59,6 +60,7 @@ nav a:hover, nav a.active{
     box-shadow: 0 2px black;
     transform: translateY(3px);
     background-color: #00008B;
+    color: yellow;
 }
 .active{
     color:yellow;
@@ -77,8 +79,8 @@ nav a:hover, nav a.active{
     margin: 1rem 0;
 }
 .card h2{
-    background-color: #AA336A;
-    color: whitesmoke;
+    background-color: #FFC0CB;
+    color: black;
     display: block;
     text-align: center;
     padding: .75rem 0;
@@ -93,7 +95,4 @@ h1{
 footer {
     background-color: #00008B;
     color: yellow;
-}
-h2{
-    color: #f2f2f2
 }

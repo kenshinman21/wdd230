@@ -21,7 +21,8 @@ header{
     justify-content: center;
     padding: 20px;
     border: 1px solid black;
-    background-color: #007BFF; /* lighter shade of blue works better */
+    background-color: #00008B; /* lighter shade of blue works better */
+    color: yellow;
 }
 nav{
     max-width: 800px;
@@ -57,10 +58,10 @@ nav a:hover, nav a.active{
     text-decoration: underline;
     box-shadow: 0 2px black;
     transform: translateY(3px);
-    background-color: #007BFF;
+    background-color: #00008B;
 }
 .active{
-    color:black;
+    color:yellow;
 }
 .card {
     margin: 1rem 2vw;
@@ -90,5 +91,9 @@ h1{
     text-align: center;
 }
 footer {
-    background-color: #007BFF;
+    background-color: #00008B;
+    color: yellow;
+}
+h2{
+    color: #f2f2f2
 }

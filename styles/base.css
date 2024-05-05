@@ -96,3 +96,66 @@ footer {
     background-color: #00008B;
     color: yellow;
 }
+
+#menuIcon {
+    display: none; 
+    font-size: 30px; 
+    cursor: pointer;
+    padding: 10px;
+    color: black;
+}
+
+@media screen and (max-width: 649px) {
+    #menuIcon {
+        display: block; 
+    }
+
+    #menuItems {
+        display: none; 
+        width: 100%; 
+        background-color: #FFC0CB; 
+    }
+
+    #menuItems a {
+        display: block;
+        text-align: center;
+    }
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;  
+    height: 24px; 
+    background-color: #DDD; 
+    border-radius: 12px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%; 
+    transition: transform 0.3s, background-color 0.3s;
+    transform: translateX(2px); 
+}
+
+/* Applying dark mode styles */
+body.dark-mode {
+    background-color: #333; 
+    color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #555; 
+}
+
+body.dark-mode .toggle-circle {
+    transform: translateX(26px); 
+    background-color: white; 
+}

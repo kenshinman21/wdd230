@@ -31,4 +31,10 @@
     .card section {
         box-shadow: 1px 1px 10px black;
     }
+    #menuItems {
+        display: flex;
+    }
+    #menuIcon {
+        display: none; 
+}
 }

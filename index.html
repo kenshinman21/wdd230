@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="I'm Isaac Cano and the purpose of this website is for
     completing a WDD 230 - Web Frontend Development assignment that will be turned into course assignment portal.">
+    <meta property="og:title" content="My Website"/>
+    <meta property="og:description" content="A website for a school assignment."/>
+    <meta property="og:image" href="images/Pages.jpg"/>
+    <meta property="og:url" content="https://kenshinman21.github.io/wdd230/"/>
+    <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +23,13 @@
     <header>
         <img src="images/Profile.jpg" alt="Isaac Cano Profile" width="75" height="100">
         <span>Isaac Cano</span>
+        <div id="darkModeToggle" class="dark-mode-toggle">
+            <div class="toggle-circle"></div>
+        </div>
     </header>
 <nav>
-    <ul>
+    <div id="menuIcon">&#9776;</div>
+    <ul id="menuItems">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="#">Chamber</a></li>
         <li><a href="chamber-site-plan.html">Site Plan</a></li>
@@ -53,5 +63,8 @@
     <p id="lastModified"></p>    
 </footer>
 <script src="scripts/getDates.js"></script>
+<script src="scripts/hamburger-menu.js"></script>
+<script src="scripts/dark-mode-toggle.js"></script>
+<script src="scripts/dynamic-style.js"></script>
 </body>
 </html>

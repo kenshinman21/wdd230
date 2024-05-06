@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'index.html';
     });
 
-    document.querySelectorAll('.edit').forEach(button => {
+document.querySelectorAll('.edit').forEach(button => {
         button.addEventListener('click', function () {
             let p = this.previousElementSibling;
             if (p.contentEditable === "true") {

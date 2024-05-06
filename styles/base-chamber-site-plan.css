@@ -7,6 +7,7 @@ body, html {
 
 h1{
     color: white;
+    margin: top 0;
 }
 
 #homeButton {
@@ -29,11 +30,10 @@ header {
 }
 
 .top-img {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: 20px;
+    display: block;
+    margin: 0 auto;
     height: 50px;
+    padding-bottom: 10px;
 }
 
 main {
@@ -70,4 +70,24 @@ footer {
 p{
     font-family: "Arial", sans-serif;
     color: white;
+}
+.wireframe-img {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.wireframe-section {
+    background-color: #f0f0f0; /* Light background for the section */
+    border: 1px solid #ccc; /* Light border to match the 3D effect */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /* Shadow for 3D effect */
+    padding: 20px; /* Padding inside the section */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+.wireframe-img2 {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center align if needed */
 }

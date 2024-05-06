@@ -4,6 +4,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     background-color: #A52A2A;
+    color:white;
 }
 header, footer {
     background-color: #006400;
@@ -25,7 +26,7 @@ header, footer {
     color: black; 
 }
 .nav-menu a {
-    color: black;
+    color: white;
     background-color: #A52A2A;
     padding: 10px;
     margin: 0 5px;
@@ -75,7 +76,7 @@ input[type="text"], button {
 .section-container section {
     background-color: transparent; /* Avoid unwanted background colors */
     padding: 10px;
-    color: black;
+    color: white;
 }
 .event-article, .spotlight-article {
     background-color: #008000;

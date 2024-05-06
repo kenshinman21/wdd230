@@ -21,10 +21,14 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        color: white;
+    }
+    #menuItems{
+        color: white;
     }
     .nav-menu a {
         background-color: #8B4513;
-        color: black;
+        color: white;
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;

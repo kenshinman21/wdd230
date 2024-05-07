@@ -1,5 +1,4 @@
 @media (min-width: 1024px) {
-    /* General header styling */
     header {
         display: flex;
         flex-direction: column;
@@ -44,7 +43,7 @@
     .events article, .local-spotlights article {
         flex: 1;
         margin: 0 10px; 
-        background-color: green;
+        background-color: #006400;
         border: 2px solid black;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5); 
         padding: 10px; 
@@ -52,7 +51,7 @@
     }
     .weather {
         width: 100%; 
-        background-color: #008000;
+        background-color: #006400;
         border: 2px solid black; 
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5); 
         padding: 10px; 

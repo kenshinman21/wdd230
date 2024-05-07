@@ -15,7 +15,7 @@ header, footer {
 .section-container {
     margin: 15px 5px;
     padding: 10px;
-    background-color: #008000;
+    background-color: #006400;
     border: 2px solid black; 
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
 }
@@ -58,10 +58,10 @@ input[type="text"], button {
     font-size: 24px;
 }
 .nav-menu {
-    display: none; /* Hide on smaller screens */
+    display: none; 
 }
 .nav-menu.show {
-    display: block; /* Show when activated */
+    display: block;
 }
 .nav-menu a {
     display: block;
@@ -74,16 +74,21 @@ input[type="text"], button {
     background-color: darkgreen;
 }
 .section-container section {
-    background-color: transparent; /* Avoid unwanted background colors */
+    background-color: transparent; 
     padding: 10px;
     color: white;
 }
 .event-article, .spotlight-article {
     background-color: #008000;
-    margin: 10px 0; /* Vertical separation */
+    margin: 10px 0; 
     padding: 10px;
     border: 2px solid black;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.hero img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
 }
 .facebook-logo-link {
     display: inline-block; 

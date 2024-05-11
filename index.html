@@ -23,14 +23,13 @@
 <body>
     <header>
         <div class="Profile">
-            <picture>  
-                <img src="images/small-profile.webp" alt="My Profile Picture" width="75" height="100"> 
-                <source srcset="images/medium-profile.webp" media="(min-width: 960)"> 
-                <source srcset="images/large-profile.webp" media="(min-width: 1000)"
+            <picture>
+                <source srcset="images/medium-profile.webp" media="(min-width: 960px)">
+                <source srcset="images/large-profile.webp" media="(min-width: 1000px)">
+                <img src="images/small-profile.webp" alt="My Profile Picture" width="75" height="100">
             </picture>
             <span>Isaac Cano</span>
-        </div>
-        
+        </div>        
         <div id="darkModeToggle" class="dark-mode-toggle">
             <div class="toggle-circle"></div>
         </div>

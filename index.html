@@ -22,8 +22,15 @@
 </head>
 <body>
     <header>
-        <img src="images/Profile.webp" alt="Isaac Cano Profile" width="75" height="100">
-        <span>Isaac Cano</span>
+        <div class="Profile">
+            <picture>  
+                <img src="images/small-profile.webp" alt="My Profile Picture" width="75" height="100"> 
+                <source srcset="images/medium-profile.webp" media="(min-width: 960)"> 
+                <source srcset="images/large-profile.webp" media="(min-width: 1000)"
+            </picture>
+            <span>Isaac Cano</span>
+        </div>
+        
         <div id="darkModeToggle" class="dark-mode-toggle">
             <div class="toggle-circle"></div>
         </div>

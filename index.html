@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <img src="images/Profile.jpg" alt="Isaac Cano Profile" width="75" height="100">
+        <img src="images/Profile.webp" alt="Isaac Cano Profile" width="75" height="100">
         <span>Isaac Cano</span>
         <div id="darkModeToggle" class="dark-mode-toggle">
             <div class="toggle-circle"></div>
@@ -38,6 +38,14 @@
 </nav>
 <main>
     <h1>WDD 230: Web Frontend Development</h1>
+<div class="hero">
+    <picture>
+        <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+        <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+        <img src="images/hero-large.webp" alt="hero photo of the Houston Texas Temple" width="500" height="250">
+    </picture>
+    <span>Houston Texas Temple</span>
+</div>
 <div class="card">
 <section>
     <h2>Learning Activities</h2>
@@ -58,13 +66,18 @@
 </section>
 </div>
 </main>
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108727.08209361428!2d-94.65523035!3d31.61409525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8637895fa4158787%3A0x88db1616dcfba3ee!2sNacogdoches%2C%20TX!5e0!3m2!1sen!2sus!4v1715445575611!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 <footer>
     <p id="copyright">Isaac Cano US</p>
-    <p id="lastModified"></p>    
+    <p id="lastModified"></p>
+	<p>Number of visits to the page: <span id="visitCount">[Placeholder]</span></p> 
 </footer>
 <script src="scripts/getDates.js"></script>
 <script src="scripts/hamburger-menu.js"></script>
 <script src="scripts/dark-mode-toggle.js"></script>
 <script src="scripts/dynamic-style.js"></script>
+<script src="scripts/page-visits.js"></script>
 </body>
 </html>

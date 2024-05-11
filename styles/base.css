@@ -185,30 +185,3 @@ body.dark-mode .toggle-circle {
     width: 100%; 
     height: auto;
 }
-.cookie-consent {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-    padding: 1em;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    display: none;
-}
-.cookie-consent p {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-}
-.cookie-consent a {
-    color: #0066cc;
-}
-.button {
-    margin-left: 10px;
-    padding: 0.5em 1em;
-    background-color: #0066cc;
-    border: none;
-    color: white;
-    cursor: pointer;
-}

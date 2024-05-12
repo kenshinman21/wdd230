@@ -1,0 +1,104 @@
+@media screen and (max-width: 650px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inclusive Sans', sans-serif;
+        background-color: #8B4513; /* dark brown background */
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px; /* Adjust for hamburger, profile, toggle */
+        align-items: center;
+        padding: 5px;
+        background-color: #006400; /* dark green background */
+    }
+
+    .hamburger-menu {
+        display: block; /* Ensure it's always visible */
+        cursor: pointer;
+        font-size: 24px;
+        color: white; /* Ensures visibility */
+    }
+
+    .profile {
+        grid-column: 2 / 3;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align the profile */
+    }
+
+    .search-form {
+        grid-column: 2 / 3;
+        justify-self: center;
+        width: 100%; /* Full width */
+        order: 2; /* Below profile image */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        width: 100%; /* Full width of grid column */
+        background-color: #8B4513;
+        padding: 0;
+        position: absolute;
+        top: 100%; /* Directly below header */
+        left: 0;
+        z-index: 10; /* Ensures it appears over other content */
+    }
+
+    .nav-menu a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        display: block; /* Makes the entire area clickable */
+    }
+
+    .nav-menu a:hover {
+        background-color: #555;
+        cursor: pointer;
+    }
+
+    .dark-mode-toggle {
+        grid-column: 3 / 4;
+        justify-self: end;
+    }
+
+    .sidebar {
+        background-color: #8B4513;
+        padding: 10px;
+    }
+
+    .sticky-note {
+        background: #ffeb3b;
+        color: black;
+        margin: 5px 0;
+        padding: 10px;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+        cursor: pointer;
+    }
+
+    .photo-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .photo-grid figure {
+        margin: 0;
+        padding: 10px;
+        border: 1px solid black;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    }
+
+    footer {
+        background-color: #006400;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+}

@@ -21,21 +21,22 @@
 </head>
 <body>
     <header>
-        <form class="search-form">
-            <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
-            <button type="submit">Submit</button>
-        </form>
         <div class="profile">
             <img src="../images/small-profile.webp" alt="My Profile Picture" width="75" height="100" loading="lazy">
             <span>Isaac Cano</span>
+            <form class="search-form">
+                <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
+                <button type="submit">Submit</button>
+            </form>
         </div>
         <div id="darkModeToggle" class="dark-mode-toggle">
             <div class="toggle-circle"></div>
         </div>
     </header>
     <nav>
+        <div id="menuIcon">&#9776;</div>
         <ul id="menuItems">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
@@ -64,7 +65,7 @@
                 <button>Edit</button>
             </div>
         </aside>
-                <main class="main-content">
+        <main class="main-content">
             <div class="photo-grid">
                 <picture>
                     <source srcset="images/large-photo-of-interest-1.webp" media="(min-width: 1200px)">
@@ -105,7 +106,7 @@
         <p>Number of visits to the page: <span id="visitCount">121</span></p> 
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamburger-button.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/dark-mode-toggle.js"></script>
     <script src="scripts/dynamic-style.js"></script>
     <script src="scripts/searchbar.js"></script>

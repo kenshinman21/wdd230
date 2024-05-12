@@ -7,14 +7,17 @@
     }
     header {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr; /* Adjust column sizing to better fit the elements */
+        grid-template-columns: 1fr 1fr 1fr; /* Adjust column sizing to better fit the elements */
         align-items: center;
         padding: 10px;
         background: #1B5E20; /* Dark green for the header */
     }
     .search-form {
         grid-column: 1 / 2; /* Center the search form in the first column */
-        justify-self: center; /* Center the search form within its grid area */
+        justify-self: start; /* Center the search form within its grid area */
+    }
+    .hamburger-menu {
+        display: none;
     }
     .profile {
         grid-column: 2 / 3; /* Center profile in the middle column */
@@ -133,5 +136,19 @@
     }
     .submit-button {
         cursor: pointer;
+    }
+    .nav-menu {
+        display: flex; /* Reset to flex for larger screens */
+        flex-direction: row;
+        justify-content: center; /* Center items on larger screens */
+        align-items: center;
+        background-color: transparent; /* Reset background */
+        position: relative; /* Reset positioning */
+        top: 0; /* Remove the absolute positioning */
+        width: auto; /* Auto width instead of full width */
+    }
+
+    .nav-menu a {
+        padding: 10px 20px; /* Adjust padding for larger screens */
     }
 }

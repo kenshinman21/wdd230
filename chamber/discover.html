@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I'm Isaac Cano and the purpose of this website is for
-    completing a WDD 230 - Web Frontend Development assignment that will be turned into course assignment portal.">
+    <meta name="description" content="I'm Isaac Cano and the purpose of this website is for completing a WDD 230 - Web Frontend Development assignment that will be turned into course assignment portal.">
     <meta name="author" content="Isaac Cano">
     <meta property="og:title" content="My Website">
     <meta property="og:description" content="A website for a school assignment.">
@@ -22,44 +21,95 @@
 </head>
 <body>
     <header>
-        <div class="Profile">
-            <picture>
-                <source srcset="images/medium-profile.webp" media="(min-width: 960px)">
-                <source srcset="images/large-profile.webp" media="(min-width: 1000px)">
-                <img src="images/small-profile.webp" alt="My Profile Picture" width="75" height="100" loading="lazy">
-            </picture>
+        <form class="search-form">
+            <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="profile">
+            <img src="../images/small-profile.webp" alt="My Profile Picture" width="75" height="100" loading="lazy">
             <span>Isaac Cano</span>
-        </div>        
+        </div>
         <div id="darkModeToggle" class="dark-mode-toggle">
             <div class="toggle-circle"></div>
         </div>
     </header>
-<nav>
-    <div id="menuIcon">&#9776;</div>
-    <ul id="menuItems">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
-        <li><a href="chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="#">Form</a></li>
-    </ul>
-</nav>
-<main>
-
-</main>
-<div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108727.08209361428!2d-94.65523035!3d31.61409525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8637895fa4158787%3A0x88db1616dcfba3ee!2sNacogdoches%2C%20TX!5e0!3m2!1sen!2sus!4v1715445575611!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Hometown Google Map"></iframe>
-</div>
-<footer>
-    <p id="copyright">Isaac Cano US</p>
-    <p id="lastModified"></p>
-	<p>Number of visits to the page: <span id="visitCount">[Placeholder]</span></p> 
-</footer>
-<script src="scripts/getDates.js"></script>
-<script src="scripts/hamburger-button.js"></script>
-<script src="scripts/dark-mode-toggle.js"></script>
-<script src="scripts/dynamic-style.js"></script>
-<script src="scripts/searcchbar.js"></script>
-<script src="scripts/page-visits.js"></script>
-<script src="scripts/discover.js"></script>
+    <nav>
+        <ul id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sticky-note" onclick="toggleContent('demographics-content')">Demographics:</div>
+            <p id="demographics-content" class="sidebar-content" style="display:none;">Show Demographics for users' visits</p>
+            
+            <div class="sticky-note" onclick="toggleContent('statistical-data-content')">Statistical Data:</div>
+            <p id="statistical-data-content" class="sidebar-content" style="display:none;">Show data about the site</p>
+            
+            <div class="sticky-note" onclick="toggleContent('events-content')">Events:</div>
+            <p id="events-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('attractions-content')">Attractions:</div>
+            <p id="attractions-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('calendar-content')">Calendar:</div>
+            <div id="calendar-content" class="sidebar-content" style="display:none;">Calendar UI</div>
+            
+            <div class="sticky-note" onclick="toggleContent('comments-content')">Comments:</div>
+            <div id="comments-content" class="sidebar-content" style="display:none;">
+                <textarea></textarea>
+                <button>Edit</button>
+            </div>
+        </aside>
+                <main class="main-content">
+            <div class="photo-grid">
+                <picture>
+                    <source srcset="images/large-photo-of-interest-1.webp" media="(min-width: 1200px)">
+                    <source srcset="images/medium-photo-of-interest-1.webp" media="(min-width: 768px)">
+                    <img src="images/small-photo-of-interest-1.webp" alt="A road that goes through nature." loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/large-photo-of-interest-2.webp" media="(min-width: 1200px)">
+                    <source srcset="images/medium-photo-of-interest-2.webp" media="(min-width: 768px)">
+                    <img src="images/small-photo-of-interest-2.webp" alt="A border fence that is near a country road." loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/large-photo-of-interest-3.webp" media="(min-width: 1200px)">
+                    <source srcset="images/medium-photo-of-interest-3.webp" media="(min-width: 768px)">
+                    <img src="images/small-photo-of-interest-3.webp" alt="A road that looks barren but mysterious" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/large-photo-of-interest-4.webp" media="(min-width: 1200px)">
+                    <source srcset="images/medium-photo-of-interest-4.webp" media="(min-width: 768px)">
+                    <img src="images/small-photo-of-interest-4.webp" alt="A church building in Nacogdoches" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/large-photo-of-interest-5.webp" media="(min-width: 1200px)">
+                    <source srcset="images/medium-photo-of-interest-5.webp" media="(min-width: 768px)">
+                    <img src="images/small-photo-of-interest-5.webp" alt="Two horses found in Nacogdoches" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/large-photo-of-interest-6.webp" media="(min-width: 1200px)">
+                    <source srcset="images/medium-photo-of-interest-6.webp" media="(min-width: 768px)">
+                    <img src="images/small-photo-of-interest-6.webp" alt="A lake found in Nacogdoches" loading="lazy">
+                </picture>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p id="copyright">Isaac Cano, US</p>
+        <p id="lastModified"></p>
+        <p>Number of visits to the page: <span id="visitCount">121</span></p> 
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger-button.js"></script>
+    <script src="scripts/dark-mode-toggle.js"></script>
+    <script src="scripts/dynamic-style.js"></script>
+    <script src="scripts/searchbar.js"></script>
+    <script src="scripts/page-visits.js"></script>
+    <script src="scripts/discover.js"></script>
 </body>
 </html>

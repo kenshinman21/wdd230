@@ -1,18 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+document.addEventListener("DOMContentLoaded", function() {
+    var copyrightParagraph = document.getElementById("copyright");
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    var myName = "Isaac Cano";
+    var myLocation = "US";
+    var copyrightText = "© " + currentYear + " " + myName + ", " + myLocation;
+    copyrightParagraph.textContent = copyrightText;
 
-    document.getElementById('homeButton').addEventListener('click', function() {
-        window.location.href = 'index.html';
-    });
-
-document.querySelectorAll('.edit').forEach(button => {
-        button.addEventListener('click', function () {
-            let p = this.previousElementSibling;
-            if (p.contentEditable === "true") {
-                p.contentEditable = "false";
-            } else {
-                p.contentEditable = "true";
-            }
-        });
-    });
+    var lastModifiedParagraph = document.getElementById("lastModified");
+    var lastModifiedText = "Last modified: " + document.lastModified;
+    lastModifiedParagraph.textContent = lastModifiedText;
 });

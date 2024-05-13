@@ -14,11 +14,41 @@
         padding: 10px;
         background-color: #006400; /* Dark green background */
     }
-
     #menuIcon {
         cursor: pointer;
         flex-grow: 0; 
     }
+
+    /* General styling for all figures on smaller screens */
+figure {
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Styling the picture to give it a 3D effect on smaller screens */
+picture img {
+    transition: transform 0.5s ease;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+picture:hover img {
+    transform: perspective(600px) rotateY(10deg);
+}
+
+/* Styling figcaption with a green background on smaller screens */
+figcaption {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.8;
+}
+
 
     #menuItems {
         display: none; /* Initially hidden */

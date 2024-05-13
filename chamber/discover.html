@@ -46,10 +46,10 @@
         <aside class="sidebar">
             <div class="sticky-note" onclick="toggleContent('demographics-content')">Demographics:</div>
             <p id="demographics-content" class="sidebar-content" style="display:none;">Show Demographics for users' visits</p>
-            
-            <div class="sticky-note" onclick="toggleContent('statistical-data-content')">Statistical Data:</div>
+            <div class="sticky-note" onclick="toggleContent('statistical-data-content')">
+                Statistical Data: <span id="visitMessage">Loading...</span>
+            </div>
             <p id="statistical-data-content" class="sidebar-content" style="display:none;">Show data about the site</p>
-            
             <div class="sticky-note" onclick="toggleContent('events-content')">Events:</div>
             <p id="events-content" class="sidebar-content" style="display:none;">Description</p>
             

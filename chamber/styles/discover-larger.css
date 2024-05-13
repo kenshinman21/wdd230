@@ -7,34 +7,42 @@
     }
     header {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* Adjust column sizing to better fit the elements */
+        grid-template-columns: 1fr auto 1fr;
         align-items: center;
         padding: 10px;
-        background: #1B5E20; /* Dark green for the header */
+        background-color: #1B5E20; /* Dark green background */
     }
     .search-form {
-        grid-column: 1 / 2; /* Center the search form in the first column */
-        justify-self: start; /* Center the search form within its grid area */
+        grid-column: 1;
+        justify-self: start;
     }
+
     .hamburger-menu {
         display: none;
     }
     .profile {
-        grid-column: 2 / 3; /* Center profile in the middle column */
-        justify-content: center; /* Ensure the profile content is centered */
+        grid-column: 2;
         display: flex;
+        justify-content: center;
         align-items: center;
     }
     #darkModeToggle {
-        grid-column: 3 / 4; /* Move dark mode toggle to the right column */
-        justify-self: end; /* Align it to the end of the grid area */
+        grid-column: 3;
+        justify-self: end;
+        position: relative;
+        width: 50px;
+        height: 24px;
+        background-color: #ccc;
+        border-radius: 12px;
     }
+
     .dark-mode-toggle {
         position: relative;
         width: 50px;
         height: 24px;
         background-color: #ccc;
         border-radius: 12px;
+        cursor: pointer;
     }
     .toggle-circle {
         position: absolute;
@@ -42,10 +50,11 @@
         left: 2px;
         width: 20px;
         height: 20px;
-        background-color: #fff;
+        background-color: white;
         border-radius: 50%;
         transition: transform 0.3s ease;
     }
+
     body.dark-mode #darkModeToggle .toggle-circle {
         transform: translateX(26px);
         background-color: #666;
@@ -61,30 +70,40 @@
     nav {
         display: flex;
         justify-content: center;
-        padding: 10px 0;
+        margin-top: 10px;
     }
     #menuItems {
         display: flex;
-        gap: 10px;
-        list-style-type: none;
+        justify-content: space-evenly; /* Ensures buttons do not touch each other */
+        align-items: center;
+        width: 100%; /* Full width to distribute space */
+        list-style-type: none; /* Removes bullets */
         padding: 0;
     }
     #menuItems li {
+        margin: 0 10px; /* Adds margin to create space between items */
         background-color: grey;
         border: 2px solid black;
         border-radius: 5px;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
+
     #menuItems li a {
         display: block;
         color: white;
         text-decoration: none;
-        padding: 10px 20px;
-        transition: background-color 0.3s, box-shadow 0.3s;
+        display: block;
+        padding: 10px 20px; /* Sufficient padding for clickable area */
     }
-    #menuItems li a:hover {
+
+    #menuItems li:hover {
         background-color: #555;
         box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
+    }
+
+    #menuIcon {
+        display: none;
     }
     .container {
         display: grid;

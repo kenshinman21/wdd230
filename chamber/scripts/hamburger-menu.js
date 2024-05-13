@@ -1,30 +1,35 @@
 document.addEventListener("DOMContentLoaded", function() {
     var menuIcon = document.getElementById('menuIcon');
     var menuItems = document.getElementById('menuItems');
-    var isOpen = false; // State to track if the menu is open
+    var isOpen = false; // Tracks the menu state
 
     menuIcon.addEventListener('click', function() {
-        isOpen = !isOpen; // Toggle the state
+        isOpen = !isOpen; // Toggle the menu state
         updateMenuDisplay();
     });
 
     function updateMenuDisplay() {
-        if (window.innerWidth >= 650) {
-            // Always show menu for screens wider than 650px
-            menuItems.style.display = 'flex';
+        if (isOpen) {
+            menuItems.style.display = 'block'; // Show the menu
+            menuItems.style.position = 'absolute'; // Ensure it's a popup
         } else {
-            // Toggle based on menu state for smaller screens
-            menuItems.style.display = isOpen ? 'block' : 'none';
+            menuItems.style.display = 'none'; // Hide the menu
         }
-        // Update the icon
-        menuIcon.innerHTML = isOpen ? '&times;' : '&#9776;';
+        menuIcon.innerHTML = isOpen ? '&times;' : '&#9776;'; // Change icon
     }
 
-    // Reset menu state on window resize
     window.addEventListener('resize', function() {
-        isOpen = false; // Reset the open state
-        updateMenuDisplay(); // Update display based on new window size
+        if (window.innerWidth >= 650) {
+            // Always show menu on larger screens
+            isOpen = true; // Ensure menu is open
+            menuItems.style.display = 'block';
+            menuItems.style.position = 'static'; // Normal position
+        } else if (window.innerWidth < 650 && !isOpen) {
+            // Hide menu on smaller screens if it's not open
+            menuItems.style.display = 'none';
+        }
     });
 
-    updateMenuDisplay(); // Initial display setup
+    // Initial setup based on current window size
+    updateMenuDisplay();
 });

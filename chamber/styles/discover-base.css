@@ -25,16 +25,13 @@ figure {
     position: relative;
     margin: 20px;
     transition: transform 0.5s ease;
+    background-color: #006400;
 }
 
 /* Styling the picture to give it a 3D effect on smaller screens */
 picture img {
     transition: transform 0.5s ease;
     transform: perspective(600px) rotateY(0deg);
-}
-
-picture:hover img {
-    transform: perspective(600px) rotateY(10deg);
 }
 
 /* Styling figcaption with a green background on smaller screens */

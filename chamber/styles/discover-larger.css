@@ -23,6 +23,7 @@ figure {
     position: relative;
     margin: 20px;
     transition: transform 0.5s ease;
+    background-color: #1B5E20;
 }
 
 /* Styling the picture to give it a 3D effect on larger screens */

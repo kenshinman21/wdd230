@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Inclusive Sans';
+    src: url('../fonts/InclusiveSans-Regular.woff2') format('woff2'),
+         url('../fonts/InclusiveSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.responsive-image-wrapper {
+    position: relative;
+    width: 100%; 
+    padding-top: 56.25%;
+}
+.responsive-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width: 650px) {
     body, html {
         margin: 0;
@@ -26,8 +47,11 @@
     background-color: #006400;
     }
     picture img {
-    transition: transform 0.5s ease;
-    transform: perspective(600px) rotateY(0deg);
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;  
+        transform: perspective(600px) rotateY(0deg);  
+        min-height: 75vw; 
     }
     figcaption {
     background-color: green;
@@ -61,6 +85,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .profile img {
+        width: 75px; 
+        height: 100px; 
+        object-fit: cover; 
     }
     .search-form {
         flex-grow: 1;
@@ -104,6 +133,18 @@
     .sidebar {
         background-color: #8B4513;
         padding: 10px;
+    }
+    .sidebar-content {
+        display: none;
+        background: #fffbeb;
+        padding: 10px;
+        margin-top: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        min-height: 50px;
+    }
+    .sidebar-content.visible {
+        display: block;
     }
     .sticky-note {
         background: #ffeb3b;

@@ -1,41 +1,35 @@
-/* CSS for smaller screens up to 650px wide */
 @media screen and (max-width: 650px) {
     body, html {
         margin: 0;
         padding: 0;
         font-family: 'Inclusive Sans', sans-serif;
-        background-color: #8B4513; /* Dark brown background for overall body */
+        background-color: #8B4513;
     }
-    
     header {
-        display: flex; /* Using flex for better control over alignment */
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        background-color: #006400; /* Dark green background */
+        background-color: #006400;
+        color: white;
     }
     #menuIcon {
         cursor: pointer;
-        flex-grow: 0; 
+        flex-grow: 0;
+        color: white;
     }
-
-    /* General styling for all figures on smaller screens */
-figure {
+    figure {
     overflow: hidden;
     position: relative;
     margin: 20px;
     transition: transform 0.5s ease;
     background-color: #006400;
-}
-
-/* Styling the picture to give it a 3D effect on smaller screens */
-picture img {
+    }
+    picture img {
     transition: transform 0.5s ease;
     transform: perspective(600px) rotateY(0deg);
-}
-
-/* Styling figcaption with a green background on smaller screens */
-figcaption {
+    }
+    figcaption {
     background-color: green;
     color: white;
     text-align: center;
@@ -44,44 +38,35 @@ figcaption {
     width: 100%;
     bottom: 0;
     opacity: 0.8;
-}
-
-
+    }
     #menuItems {
-        display: none; /* Initially hidden */
+        display: none;
         position: absolute;
         left: 0;
         width: 100%;
         background-color: #FFC0CB;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
         border: 1px solid black;
-        list-style-type: none; /* No bullet points */
+        list-style-type: none;
     }
-    
-
     #menuItems a {
         display: block;
         text-align: center;
     }
-
     #menuItems li {
-        border-bottom: 1px solid #000; /* Line separator for each menu item */
+        border-bottom: 1px solid #000;
     }
-
     .profile {
-        flex-grow: 1; /* Allows the profile container to take up available space */
+        flex-grow: 1;
         display: flex;
-        justify-content: center; /* Centers profile content */
+        justify-content: center;
         align-items: center;
     }
-
     .search-form {
         flex-grow: 1;
         display: flex;
         justify-content: center;
     }
-        
-
     .dark-mode-toggle {
         position: relative;
         width: 40px;
@@ -90,7 +75,6 @@ figcaption {
         border-radius: 10px;
         cursor: pointer;
     }
-
     .toggle-circle {
         position: absolute;
         top: 2px;
@@ -101,30 +85,26 @@ figcaption {
         border-radius: 50%;
         transition: transform 0.3s ease;
     }
-
     .nav-menu {
-        display: none; /* Initially hide the nav menu */
+        display: none;
         position: absolute;
-        top: 100%; /* Positioned right below the header */
+        top: 100%;
         left: 0;
-        width: 100%; /* Full width */
-        background-color: #8B4513; /* Match the body background */
+        width: 100%; 
+        background-color: #8B4513;
         flex-direction: column;
-        z-index: 20; /* Ensure it's on top of other elements */
+        z-index: 20;
     }
-
     .nav-menu a {
         color: white;
         padding: 10px;
         text-decoration: none;
-        display: block; /* Make links block for full width tap/click area */
+        display: block;
     }
-
     .sidebar {
         background-color: #8B4513;
         padding: 10px;
     }
-
     .sticky-note {
         background: #ffeb3b;
         color: black;
@@ -134,21 +114,19 @@ figcaption {
         cursor: pointer;
     }
     .hamburger-menu {
-        display: block; /* Ensure the button is initially visible */
+        display: block; 
       }
     .photo-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
     }
-
     .photo-grid figure {
         margin: 0;
         padding: 10px;
         border: 1px solid black;
         box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     }
-
     footer {
         background-color: #006400;
         color: white;

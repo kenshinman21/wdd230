@@ -23,5 +23,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     localStorage.setItem('lastVisit', now.toISOString());
 });
-localStorage.setItem('key', 'value');
-var data = localStorage.getItem('key');

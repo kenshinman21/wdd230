@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/Home_Favicon.ico">
+    <link rel="icon" type="image/x-icon" href="#">
     <title>Isaac Cano - WDD 230 - Web Frontend Development</title>
 </head>
 <body>
@@ -40,11 +41,57 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="chamber/discover.html">Chamber</a></li>
         <li><a href="chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="#">Form</a></li>
+        <li><a href="form.html" class="active">Form</a></li>
     </ul>
 </nav>
 <main>
-
+    <div class="form-container">
+        <form method="get" action="record.html" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" 
+            id="username" 
+            name="username" 
+            pattern="[\u2800-\u28FFA-Za-z.]{2,}\s[\u2800-\u28FFA-Za-z.]{2,}" 
+            title="Please enter your first and last name, each at least two characters long, separated by a space. Names may include Braille characters and dots." 
+            required>
+        <div id="usernameError" style="color: red; display: none;"></div>
+            <label for="password">Password:</label>
+            <input type="password" 
+                   id="password" 
+                   name="password" 
+                   pattern="[A-Za-z0-9]{8,}" 
+                   title="Password must be at least 8 characters long and contain only letters and numbers." 
+                   required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" 
+                   id="confirm-password" 
+                   name="confirm-password" 
+                   pattern="[A-Za-z0-9]{8,}" 
+                   title="Please confirm your password, it must match the first one and follow the same rules." 
+                   required>
+            <div id="passwordError" style="color: red; display: none;"></div>
+            <label for="email">Email:</label>
+            <input type="email" 
+                   id="email" 
+                   name="email" 
+                   pattern="/^[a-zA-Z0-9._%+-]+@byui\.edu$/"
+                   title="Please enter a valid email address from byui.edu" 
+                   required>
+            <div id="emailError" style="color: red; display: none;"></div>
+            <label for="page-rating">Page Rating: <span id="rating-value">5</span></label>
+            <input type="range" 
+                   id="page-rating" 
+                   name="page-rating" 
+                   min="1" max="10" 
+                   step="1" 
+                   oninput="updateRatingValue(this.value)">
+            <div class="slider-ticks">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
 </main>
 <div class="map-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108727.08209361428!2d-94.65523035!3d31.61409525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8637895fa4158787%3A0x88db1616dcfba3ee!2sNacogdoches%2C%20TX!5e0!3m2!1sen!2sus!4v1715445575611!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Hometown Google Map"></iframe>
@@ -54,10 +101,24 @@
     <p id="lastModified"></p>
 	<p>Number of visits to the page: <span id="visitCount">[Placeholder]</span></p> 
 </footer>
+<script>
+function updateRatingDisplay(value) {
+    document.getElementById('rating-value').textContent = value;
+}
+
+document.getElementById('page-rating').addEventListener('input', function() {
+    updateRatingDisplay(this.value);
+});
+
+document.querySelector('form').addEventListener('submit', function() {
+    localStorage.setItem('pageRating', document.getElementById('page-rating').value);
+});
+</script>
 <script src="scripts/getDates.js"></script>
 <script src="scripts/hamburger-menu.js"></script>
 <script src="scripts/dark-mode-toggle.js"></script>
 <script src="scripts/dynamic-style.js"></script>
 <script src="scripts/page-visits.js"></script>
+<script src="scripts/formvalidation.js"></script>
 </body>
 </html>

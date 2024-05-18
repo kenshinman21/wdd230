@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission Success</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Congratulations!</h1>
+        <p>Your information has been successfully submitted.</p>
+    </header>
+    <main>
+        <h2>Submission Details</h2>
+        <p id="pageRatingInfo"></p>
+    </main>
+    <footer>
+        <p>Isaac Cano, US</p>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+var pageRating = localStorage.getItem('pageRating');
+    if(pageRating) {
+    document.getElementById('pageRatingInfo').textContent = "Page Rating: " + pageRating;
+        }
+});
+</script>
+<script src="scripts/formvalidation.js"></script>
+</body>
+</html>

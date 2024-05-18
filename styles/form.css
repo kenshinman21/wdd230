@@ -1,9 +1,9 @@
 :root {
-    --main-bg-color: #fff;  /* White background used across the site */
-    --highlight-color: #4CAF50;  /* Green color for highlights and interactive elements */
-    --text-color: #000;  /* Common text color */
-    --border-radius: 50%;  /* Common border-radius value for rounded elements */
-    --error-color: red;  /* Common color for displaying errors */
+    --main-bg-color: #fff; 
+    --highlight-color: #4CAF50;  
+    --text-color: #000;  
+    --border-radius: 50%;  
+    --error-color: red;
 }
 header, main, footer {
     text-align: center;
@@ -34,24 +34,24 @@ input, label {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 #passwordError {
-    color: var(--error-color);           /* Red is commonly used for error messages */
-    background-color: #fff4f4; /* Light red/pink background for emphasis */
+    color: var(--error-color);           
+    background-color: #fff4f4; 
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid var(--error-color);
-    display: none;        /* Initially hidden */
-    font-size: 0.9em;     /* Slightly smaller font size to differentiate from input labels */
+    display: none;        
+    font-size: 0.9em;
 }
 #usernameError {
     color: var(--error-color);
-    display: none;  /* Initially hidden */
+    display: none;
     margin-top: 5px;
     border: 1px solid var(--error-color);
 }
 #emailError {
-    color: var(--error-color);  /* Uses the error color for text */
-    background-color: #fff4f4;  /* Light background for error messages */
+    color: var(--error-color); 
+    background-color: #fff4f4;
     border: 1px solid var(--error-color);  
 }
 input[type="range"] {
@@ -66,11 +66,9 @@ input[type="range"] {
     transition: opacity .2s;
     cursor: pointer;
 }
-
 input[type="range"]:hover {
     opacity: 1;
 }
-
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -80,7 +78,6 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
     border-radius: var(--border-radius);
 }
-
 input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
@@ -88,20 +85,17 @@ input[type="range"]::-moz-range-thumb {
     cursor: pointer;
     border-radius: var(--border-radius);
 }
-
 .slider-ticks {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
 }
-
 .slider-ticks span {
     position: relative;
     text-align: center;
     color: #000;
     cursor: pointer;
 }
-
 #rating-value {
     font-size: 16px;
     color: #333;

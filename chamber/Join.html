@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm Isaac Cano and the purpose of this website is for completing a WDD 230 - Web Frontend Development assignment that is for 
+    my Join webpage.">
+    <meta name="author" content="Isaac Cano">
+    <meta property="og:title" content="Join Page">
+    <meta property="og:description" content="A website for a school assignment.">
+    <meta property="og:image" content="https://stockcake.com/i/office-desktop-setup_869927_1006605">
+    <meta property="og:url" content="https://kenshinman21.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover-base.css">
+    <link rel="stylesheet" href="styles/discover-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/discover-fav.ico">
+    <title>Isaac Cano - WDD 230 - Join</title>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="../images/small-profile.webp" alt="My Profile Picture" width="75" height="100" loading="lazy">
+            <span>Isaac Cano</span>
+            <form class="search-form">
+                <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="darkModeToggle" class="dark-mode-toggle">
+            <div class="toggle-circle"></div>
+        </div>
+    </header>
+    <nav>
+        <div id="menuIcon">&#9776;</div>
+        <ul id="menuItems">
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="../chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sticky-note" onclick="toggleContent('demographics-content')">Demographics:</div>
+            <p id="demographics-content" class="sidebar-content" style="display:none;">Show Demographics for users' visits</p>
+            <div class="sticky-note" onclick="toggleContent('statistical-data-content')">
+                Statistical Data: <span id="visitMessage">Loading...</span>
+            </div>
+            <p id="statistical-data-content" class="sidebar-content" style="display:none;">Show data about the site</p>
+            <div class="sticky-note" onclick="toggleContent('events-content')">Events:</div>
+            <p id="events-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('attractions-content')">Attractions:</div>
+            <p id="attractions-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('calendar-content')">Calendar:</div>
+            <div id="calendar-content" class="sidebar-content" style="display:none;">Calendar UI</div>
+            
+            <div class="sticky-note" onclick="toggleContent('comments-content')">Comments:</div>
+            <div id="comments-content" class="sidebar-content" style="display:none;">
+                <label for="comment-box">Comments:</label>
+                <textarea id="comment-box" name="comments"></textarea>
+                <button aria-label="Edit comments">Edit</button>
+            </div>
+        </aside>
+        <main>
+            <div class="form-window">
+                <div class="window-title-bar">
+                    <div class="form-title">Membership Application Form</div>
+                    <div class="window-controls">
+                        <button class="control-btn minimize">-</button>
+                        <button class="control-btn maximize">[]</button>
+                        <button class="control-btn close">x</button>
+                    </div>
+                </div>
+                <form action="thankyou.html" method="get" class="membership-application-form">
+                    <section class="section contact-info">
+                        <h2>Contact Info</h2>
+                        <div class="input-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first_name" pattern="[\u2800-\u28FFA-Za-z.]{2,}" title="First name must be at least 2 characters long and can include Braille characters and dots. No spaces allowed." required>
+                            <span class="error-message" id="first-name-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last_name" pattern="[\u2800-\u28FFA-Za-z.]{2,}" title="Last name must be at least 2 characters long and can include Braille characters and dots. No spaces allowed." required>
+                            <span class="error-message" id="last-name-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" title="Please enter a valid email address with any characters in the username and a standard domain." required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="cellphone">Cellphone Number:</label>
+                            <input type="tel" id="cellphone" name="cellphone" pattern="^\+?[0-9\s\-\.\(\)]{7,15}$" title="Please enter a valid phone number (e.g., +1 234 567 8901, +44-20-1234-5678)." required>
+                            <span class="error-message" id="cellphone-error"></span>
+                        </div>
+                    </section>
+                    <section class="section business-info">
+                        <h2>Business/Organization Info</h2>
+                        <div class="input-group">
+                            <label for="business-name">Business Name:</label>
+                            <input type="text" id="business-name" name="business_name" pattern="[\u2800-\u28FFA-Za-z0-9 .,'&-]{2,}" title="Please enter a valid business or organization name. It must be at least 2 characters long." required>
+                            <span class="error-message" id="business-name-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="id-number">ID #:</label>
+                            <input type="text" id="id-number" name="id_number" pattern="^[0-9A-Z\-]{5,20}$" title="Please enter a valid ID number. ID must be 5-20 characters long and can include numbers, uppercase letters, and hyphens." required>
+                            <span class="error-message" id="id-number-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="title-position">Title or Position:</label>
+                            <input type="text" id="title-position" name="title_position" pattern="^[A-Za-z\s\-]{7,}$" title="Please enter a valid title or position. At least 7 characters are required, including letters, hyphens, and spaces only." required>
+                            <span class="error-message" id="title-position-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="description">Business/Organization Description:</label>
+                            <textarea id="description" name="description" pattern="^[A-Za-z0-9\s.,'?!&-]{10,1000}$" title="Description can include letters, numbers, spaces, and common punctuation. Min 10 characters, max 1000 characters." required></textarea>
+                            <span class="error-message" id="description-error"></span>
+                        </div>
+                    </section>
+                    <section class="section membership-level">
+                        <h2>Membership Level</h2>
+                        <div class="membership-option">
+                            <input type="radio" id="np" name="membership_level" value="np" checked>
+                            <label for="np">NP (Non Profit) Membership - Free</label>
+                        </div>
+                        <div class="membership-option">
+                            <input type="radio" id="bronze" name="membership_level" value="bronze">
+                            <label for="bronze">Bronze Membership - $5.00</label>
+                        </div>
+                        <div class="membership-option">
+                            <input type="radio" id="silver" name="membership_level" value="silver">
+                            <label for="silver">Silver Membership - $10.00</label>
+                        </div>
+                        <div class="membership-option">
+                            <input type="radio" id="gold" name="membership_level" value="gold">
+                            <label for="gold">Gold Membership - $15.00</label>
+                        </div>
+                    </section>
+                    <button type="submit" class="form-submit-button">Join Us</button>
+                    <input type="hidden" id="form-timestamp" name="form_timestamp">
+                </form>
+                <section class="membership-benefits">
+                    <h2>Membership Benefits</h2>
+                    <div class="benefit">
+                        <h3>NP (Non Profit) Membership</h3>
+                        <p>If you choose this membership, you can enjoy some of the benefits that come
+                            with being apart of the Cano Organization. Those benefits could include netwroking and business Opportunities
+                            in Nacogodhces. 
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="benefit">
+                        <h3>Bronze Membership</h3>
+                        <p>If you choose this membership, you can enjoy some privelaged befenits that come with being a paid member.
+                            Those benefits include a small photo picture of me as well as the Opportunity to have more networking and
+                            buisness Opportunities.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="benefit">
+                        <h3>Silver Membership</h3>
+                        <p>If you choose this membership, you can enjoy even more privelages. You will have benefits like the ability to edit the picutres
+                            on any of the webpages I own as well as having pictures of me and professional pictures of the town.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="benefit">
+                        <h3>Gold Membership</h3>
+                        <p>If you choose this membership, you can enjoy all the benefits our company can afford you. As a Gold member you can
+                            not only edit the pctures but what the websites say, as well as some stocks in our company. 
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p id="copyright">Isaac Cano, US</p>
+            <p id="lastModified"></p>
+            <p>Number of visits to the page: <span id="visitCount"></span></p> 
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const formWindow = document.querySelector('.form-window');
+                const minimizeBtn = document.querySelector('.control-btn.minimize');
+                const maximizeBtn = document.querySelector('.control-btn.maximize');
+                const closeBtn = document.querySelector('.control-btn.close');
+        
+                let isMaximized = false;
+        
+                minimizeBtn.addEventListener('click', function () {
+                    formWindow.style.display = 'none';
+                });
+        
+                maximizeBtn.addEventListener('click', function () {
+                    if (isMaximized) {
+                        formWindow.style.width = 'auto';
+                        formWindow.style.height = 'auto';
+                        formWindow.style.position = 'static';
+                        isMaximized = false;
+                    } else {
+                        formWindow.style.width = '100%';
+                        formWindow.style.height = '100%';
+                        formWindow.style.position = 'fixed';
+                        formWindow.style.top = '0';
+                        formWindow.style.left = '0';
+                        isMaximized = true;
+                    }
+                });
+        
+                closeBtn.addEventListener('click', function () {
+                    formWindow.remove();
+                });
+            });
+        </script>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburger-menu.js"></script>
+        <script src="scripts/dark-mode-toggle.js"></script>
+        <script src="scripts/dynamic-style.js"></script>
+        <script src="scripts/searchbar.js"></script>
+        <script src="scripts/page-visits.js"></script>
+        <script src="scripts/discover.js"></script>
+    </body>
+</html>

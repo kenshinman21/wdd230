@@ -18,6 +18,108 @@
     width: 100%;
     height: 100%;
 }
+.form-window {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    margin: auto;
+    width: 80%;
+}
+.error-message {
+    color: red;                 
+    background-color: #fff4f4;  
+    padding: 8px;               
+    margin-top: 5px;            
+    border-radius: 5px;         
+    border: 1px solid red;      
+    display: none;              
+    font-size: 0.9em;           
+}
+.window-title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+.form-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.window-controls {
+    flex-shrink: 0; 
+    display: flex;
+}
+.control-btn {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.control-btn:hover {
+    background-color: #ddd;
+}
+.section {
+    border: 1px solid #000;
+    padding: 15px;
+    margin-bottom: 20px; 
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+}
+.section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    grid-column: 1 / -1; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: calc(100% - 20px); 
+    padding: 8px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.section .input-group:last-child input,
+.section .input-group:last-child textarea {
+    margin-bottom: 0;
+}
+.membership-option {
+    display: flex;
+    align-items: center;
+}
+.membership-option input {
+    margin-right: 5px; 
+}
+button.form-submit-button {
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    width: auto;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+button.form-submit-button:hover {
+    background-color: #45a049;
+}
 
 @media screen and (max-width: 650px) {
     body, html {
@@ -33,6 +135,15 @@
         padding: 10px;
         background-color: #006400;
         color: white;
+    }
+    .form-window {
+        width: 95%;
+    }
+    .form-title {
+        margin-right: -100px;
+    }
+    .section {
+        grid-template-columns: 1fr;
     }
     #menuIcon {
         cursor: pointer;
@@ -173,5 +284,33 @@
         color: white;
         text-align: center;
         padding: 10px;
+    }
+    .membership-benefits {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .membership-benefits h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    }
+    .membership-benefits .benefit {
+    padding: 10px 0;
+    }
+    .membership-benefits .benefit h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    }
+    .membership-benefits .benefit p {
+    margin: 0;
+    }
+    .membership-benefits hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
     }
 }

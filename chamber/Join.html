@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I'm Isaac Cano and the purpose of this website is for completing a WDD 230 - Web Frontend Development assignment that is for 
-    my Join webpage.">
+    <meta name="description" content="I'm Isaac Cano and the purpose of this website is for completing a WDD 230 - Web Frontend Development assignment that is for my Join webpage.">
     <meta name="author" content="Isaac Cano">
     <meta property="og:title" content="Join Page">
     <meta property="og:description" content="A website for a school assignment.">
@@ -185,46 +184,46 @@
             <p>Number of visits to the page: <span id="visitCount"></span></p> 
         </footer>
     </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const formWindow = document.querySelector('.form-window');
-                const minimizeBtn = document.querySelector('.control-btn.minimize');
-                const maximizeBtn = document.querySelector('.control-btn.maximize');
-                const closeBtn = document.querySelector('.control-btn.close');
-        
-                let isMaximized = false;
-        
-                minimizeBtn.addEventListener('click', function () {
-                    formWindow.style.display = 'none';
-                });
-        
-                maximizeBtn.addEventListener('click', function () {
-                    if (isMaximized) {
-                        formWindow.style.width = 'auto';
-                        formWindow.style.height = 'auto';
-                        formWindow.style.position = 'static';
-                        isMaximized = false;
-                    } else {
-                        formWindow.style.width = '100%';
-                        formWindow.style.height = '100%';
-                        formWindow.style.position = 'fixed';
-                        formWindow.style.top = '0';
-                        formWindow.style.left = '0';
-                        isMaximized = true;
-                    }
-                });
-        
-                closeBtn.addEventListener('click', function () {
-                    formWindow.remove();
-                });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const formWindow = document.querySelector('.form-window');
+            const minimizeBtn = document.querySelector('.control-btn.minimize');
+            const maximizeBtn = document.querySelector('.control-btn.maximize');
+            const closeBtn = document.querySelector('.control-btn.close');
+    
+            let isMaximized = false;
+    
+            minimizeBtn.addEventListener('click', function () {
+                formWindow.style.display = 'none';
             });
-        </script>
-        <script src="scripts/getDates.js"></script>
-        <script src="scripts/hamburger-menu.js"></script>
-        <script src="scripts/dark-mode-toggle.js"></script>
-        <script src="scripts/dynamic-style.js"></script>
-        <script src="scripts/searchbar.js"></script>
-        <script src="scripts/page-visits.js"></script>
-        <script src="scripts/discover.js"></script>
+    
+            maximizeBtn.addEventListener('click', function () {
+                if (isMaximized) {
+                    formWindow.style.width = 'auto';
+                    formWindow.style.height = 'auto';
+                    formWindow.style.position = 'static';
+                    isMaximized = false;
+                } else {
+                    formWindow.style.width = '100%';
+                    formWindow.style.height = '100%';
+                    formWindow.style.position = 'fixed';
+                    formWindow.style.top = '0';
+                    formWindow.style.left = '0';
+                    isMaximized = true;
+                }
+            });
+    
+            closeBtn.addEventListener('click', function () {
+                formWindow.remove();
+            });
+        });
+    </script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/dark-mode-toggle.js"></script>
+    <script src="scripts/dynamic-style.js"></script>
+    <script src="scripts/searchbar.js"></script>
+    <script src="scripts/page-visits.js"></script>
+    <script src="scripts/discover.js"></script>
 </body>
 </html>

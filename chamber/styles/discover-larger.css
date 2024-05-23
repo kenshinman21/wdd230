@@ -186,10 +186,12 @@
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     }
     footer {
-        background: #1B5E20;
+        background-color: #006400;
         color: white;
         text-align: center;
-        padding: 10px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     .sidebar-content {
         background: #fffbeb;

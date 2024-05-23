@@ -8,6 +8,10 @@ body{
     font-family: "Inclusive Sans", sans-serif;
     font-weight: 400;
 }
+a {
+    color: blue;
+    text-decoration: underline;
+}
 nav {
     background-color: #FFC0CB; /* darker pink helps with the constrast */
     color: black;

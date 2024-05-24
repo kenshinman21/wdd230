@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Acme Corporation",
+        "address": "123 Elm St, Exampleville, EX 12345",
+        "phone": "123-456-7890",
+        "website": "http://www.acmecorp.com",
+        "logo": "images/logo-of-Acme-Corporation.png",
+        "alt": "Logo of Acme Corporation",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Leading provider of furniture sales."
+    },
+    {
+        "name": "Beetle Inc.",
+        "address": "456 Oak St, Sampletown, SA 23456",
+        "phone": "456-789-0123",
+        "website": "http://www.beetleinc.com",
+        "lgo": "beetle-logo.png",
+        "alt": "Logo of Beetle Inc.",
+        "membershipLevel": "Silver",
+        "additionalInfo": "Specializes in organic pest control."
+    },
+    {
+        "name": "Creative Solutions",
+        "address": "789 Pine St, Mockburg, MO 34567",
+        "phone": "789-012-3456",
+        "website": "http://www.creativesol.com",
+        "lgo": "creative-logo.png",
+        "alt": "Logo of Creative Solutions",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "Innovative marketing and design services."
+    },
+    {
+        "name": "Green Gardens",
+        "address": "101 Maple Lane, Greentown, GT 45678",
+        "phone": "321-654-0987",
+        "website": "http://www.greengardens.com",
+        "logo": "green-gardens-logo.png",
+        "alt": "Logo of Green Gardens",
+        "membershipLevel": "Silver",
+        "additionalInfo": "Eco-friendly landscaping services."
+    },
+    {
+        "name": "Tech Trends",
+        "address": "202 Circuit Rd, Techville, TC 56789",
+        "phone": "234-567-8910",
+        "website": "http://www.techtrends.com",
+        "logo": "tech-trends-logo.png",
+        "alt": "Logo of Tech Trends",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Cutting-edge technology news and products."
+    },
+    {
+        "name": "Oceanic Adventures",
+        "address": "303 Deep Sea Dr, Oceanview, OV 67890",
+        "phone": "345-678-9012",
+        "website": "http://www.oceanicadventures.com",
+        "logo": "oceanic-logo.png",
+        "alt": "Logo of Oceanic Adventures",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "Scuba diving and marine tours."
+    },
+    {
+        "name": "Baker's Delight",
+        "address": "404 Sweet St, Cookietown, CK 78901",
+        "phone": "456-789-0123",
+        "website": "http://www.bakersdelight.com",
+        "logo": "bakers-delight-logo.png",
+        "alt": "Logo of Baker's Delight",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Homemade cookies and cakes."
+    }
+]

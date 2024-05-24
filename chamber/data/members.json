@@ -4,7 +4,7 @@
         "address": "123 Elm St, Exampleville, EX 12345",
         "phone": "123-456-7890",
         "website": "http://www.acmecorp.com",
-        "logo": "images/logo-of-Acme-Corporation.png",
+        "logo": "logo-of-Acme-Corporation.png",
         "alt": "Logo of Acme Corporation",
         "membershipLevel": "Gold",
         "additionalInfo": "Leading provider of furniture sales."

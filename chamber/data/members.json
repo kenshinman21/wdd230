@@ -4,7 +4,7 @@
         "address": "123 Elm St, Exampleville, EX 12345",
         "phone": "123-456-7890",
         "website": "http://www.acmecorp.com",
-        "logo": "logo-of-Acme-Corporation.png",
+        "logo": "acme-corporation-logo.png",
         "alt": "Logo of Acme Corporation",
         "membershipLevel": "Gold",
         "additionalInfo": "Leading provider of furniture sales."
@@ -14,7 +14,7 @@
         "address": "456 Oak St, Sampletown, SA 23456",
         "phone": "456-789-0123",
         "website": "http://www.beetleinc.com",
-        "lgo": "beetle-logo.png",
+        "logo": "beetle-inc-logo.png",
         "alt": "Logo of Beetle Inc.",
         "membershipLevel": "Silver",
         "additionalInfo": "Specializes in organic pest control."
@@ -24,7 +24,7 @@
         "address": "789 Pine St, Mockburg, MO 34567",
         "phone": "789-012-3456",
         "website": "http://www.creativesol.com",
-        "lgo": "creative-logo.png",
+        "logo": "creative-solutions-logo.png",
         "alt": "Logo of Creative Solutions",
         "membershipLevel": "Bronze",
         "additionalInfo": "Innovative marketing and design services."

@@ -239,3 +239,8 @@ body.dark-mode .toggle-circle {
     width: 30px;  /* Adjust size as needed */
     height: auto;
 }
+.Profile {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the items */
+}

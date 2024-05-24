@@ -1,0 +1,48 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {"url": "path/to/week1/activity1.html", "title": "Code Pen 1 for Week 1"},
+                {"url": "path/to/week1/activity2.html", "title": "Code Pen 2 for Week 1"}
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {"url": "path/to/week2/activity1.html", "title": "Code Pen 1 for Week 2"}
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {"url": "path/to/week3/activity1.html", "title": "Code Pen 1 for Week 3"}
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {"url": "path/to/week4/activity1.html", "title": "Code Pen 1 for Week 4"}
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {"url": "https://codepen.io/kenshinman21/pen/QWREzry", "title": "CSS Psuedo Elements"},
+                {"url": "Week 5/weather.html", "title": "Weather App"}
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {"url": "path/to/week6/activity1.html", "title": "Code Pen 1 for Week 6"}
+            ]
+        },
+        {
+            "week": "Week 7",
+            "links": [
+                {"url": "path/to/week7/activity1.html", "title": "Code Pen 1 for Week 7"}
+            ]
+        }
+    ]
+}

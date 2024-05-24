@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             const list = document.getElementById('activitiesList');
             list.innerHTML = ''; // Clear existing list items
-            data.forEach(week => {
+            data.weeks.forEach(week => {  // Access the 'weeks' array from the JSON object
                 const weekItem = document.createElement('li');
                 weekItem.textContent = week.week + ': ';
                 week.links.forEach(link => {
@@ -12,8 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     a.href = link.url;
                     a.textContent = link.title;
                     weekItem.appendChild(a);
-                    weekItem.appendChild(document.createTextNode(', '));
+                    weekItem.appendChild(document.createTextNode(', ')); // Handling the comma
                 });
+                // Remove the last comma for aesthetics
+                if (weekItem.lastChild.textContent === ', ') {
+                    weekItem.removeChild(weekItem.lastChild);
+                }
                 list.appendChild(weekItem);
             });
         })

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,8 @@
     <meta property="og:url" content="https://kenshinman21.github.io/wdd230/">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="stylesheet" href="styles/discover-base.css">
+    <link rel="stylesheet" href="styles/discover-larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
@@ -24,26 +25,54 @@
         <p>Please enable JavaScript to view the entire contents of this site.</p>
     </noscript>
     <header>
-        <div class="Profile">
-            <picture>
-                <img src="images/Team_Member.png" alt="My Professional Profile Picture" width="75" height="100" loading="lazy" >
-            </picture>
+        <div class="join-button">
+            <a href="join.html">Join</a>
+        </div>
+        <div class="profile">
+            <img src="images/Team_Member.png" alt="My Profile Picture" width="75" height="100" loading="lazy">
             <span>Isaac Cano</span>
-        </div>        
+            <form class="search-form">
+                <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
         <div id="darkModeToggle" class="dark-mode-toggle">
             <div class="toggle-circle"></div>
         </div>
     </header>
-<nav>
-    <div id="menuIcon">&#9776;</div>
-    <ul id="menuItems">
-        <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="discover.html">Chamber</a></li>
-        <li><a href="../chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="../form.html">Form</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div id="menuIcon">&#9776;</div>
+        <ul id="menuItems">
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="../form.html">Form</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sticky-note" onclick="toggleContent('demographics-content')">Demographics:</div>
+            <p id="demographics-content" class="sidebar-content" style="display:none;">Show Demographics for users' visits</p>
+            <div class="sticky-note" onclick="toggleContent('statistical-data-content')">
+                Statistical Data: <span id="visitMessage">Loading...</span>
+            </div>
+            <p id="statistical-data-content" class="sidebar-content" style="display:none;">Show data about the site</p>
+            <div class="sticky-note" onclick="toggleContent('events-content')">Events:</div>
+            <p id="events-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('attractions-content')">Attractions:</div>
+            <p id="attractions-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('calendar-content')">Calendar:</div>
+            <div id="calendar-content" class="sidebar-content" style="display:none;">Calendar UI</div>
+            
+            <div class="sticky-note" onclick="toggleContent('comments-content')">Comments:</div>
+            <div id="comments-content" class="sidebar-content" style="display:none;">
+                <label for="comment-box">Comments:</label>
+                <textarea id="comment-box" name="comments"></textarea>
+                <button aria-label="Edit comments">Edit</button>
+            </div>
+        </aside>
 <main>
     <h1>Business Directory</h1>
     <div class="view-toggle">
@@ -56,20 +85,20 @@
     </div>
     <div id="memberContainer"></div>
 </main>
-<footer>
-    <p id="copyright">Isaac Cano, US</p>
-    <p id="lastModified"></p>
-	<p>Number of visits to the page: <span id="visitCount">[Placeholder]</span></p> 
-</footer>
-<script src="scripts/getDates.js"></script>
-<script src="scripts/hamburger-menu.js"></script>
-<script src="scripts/dark-mode-toggle.js"></script>
-<script src="scripts/dynamic-style.js"></script>
-<script src="scripts/page-visits.js"></script>
-<script src="scripts/weather.js"></script>
-<script src="data/dynamicLinks.js"></script>
-<script src="scripts/links.js"></script>
-<script src="scripts/membersDisplay.js"></script>
-<script src="scripts/no-javascript.js"></script>
+    </div>
+    <footer>
+        <p id="copyright">Isaac Cano, US</p>
+        <p id="lastModified"></p>
+        <p>Number of visits to the page: <span id="visitCount">121</span></p> 
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/dark-mode-toggle.js"></script>
+    <script src="scripts/dynamic-style.js"></script>
+    <script src="scripts/searchbar.js"></script>
+    <script src="scripts/page-visits.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/membersDisplay.js"></script>
+    <script src="../scripts/no-javascript.js"></script>
 </body>
 </html>

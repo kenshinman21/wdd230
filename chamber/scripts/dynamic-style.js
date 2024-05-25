@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Adjust font size on resize
     window.addEventListener('resize', adjustBaseFontSize);
 
-    // Initial adjustment
     adjustBaseFontSize();
 });

@@ -14,8 +14,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-h1 {
-    color:white;
+h1:first-of-type {
+    color: white;
 }
 #memberContainer.list-view {
     display: flex;

@@ -9,7 +9,7 @@ main {
 }
 img {
     width: 100%;
-    background: green;
+    background: black;
     animation: fade 20s;
 }
 @keyframes fade {

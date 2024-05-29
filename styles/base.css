@@ -244,23 +244,24 @@ body.dark-mode .toggle-circle {
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center-align the items */
 }
-#activitiesList {
-    padding: 10px 0;
-}
-
-#activitiesList li {
-    margin-bottom: 15px; /* Proximity */
-    padding: 5px 0; /* More space around items */
-    border-bottom: 1px solid #ccc; /* Visual separation */
-}
-
 #activitiesList a {
-    display: inline-block;
-    color: #3366CC; /* Contrast */
-    text-decoration: none; /* Style consistency */
-    padding: 5px; /* Alignment */
+    color: #2A4D69; 
+    font-weight: bold; 
+    text-decoration: none; 
 }
-
+#activitiesList li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+#activitiesList a {
+    margin-right: 10px; 
+    padding: 5px 10px; 
+    display: inline-block; 
+    background-color: #f0f0f0; 
+    border-radius: 5px;
+}
 #activitiesList a:hover {
-    text-decoration: underline; /* Highlight on hover for better user experience */
+    text-decoration: underline; 
+    background-color: #e1eff6; 
+    color: #ff6347;
 }

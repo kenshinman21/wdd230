@@ -1,39 +1,109 @@
-/* General body styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, figcaption, blockquote {
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
     margin: 0;
-    padding: 0;
-    font-family: 'Inclusive Sans', sans-serif;
 }
 
-/* Set consistent margin and padding */
-ul, ol {
-    padding-left: 20px;
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+    display: block;
 }
 
-/* Links */
+/**
+ * Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct box sizing in Firefox.
+ * Add the correct box sizing in IE 10-.
+ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre, code, kbd, samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
 a {
-    text-decoration: none;
-    color: inherit;
+    background-color: transparent;
 }
 
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
 }
 
-/* General Sectioning */
-section, article, aside, nav, header, footer, main {
-    display: block;
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button, input, optgroup, select, textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
 }
 
-/* Form Elements */
-input, button, textarea, select {
-    font-family: inherit;
-    font-size: 100%;
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button, input { /* 1 */
+    overflow: visible;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
-    display: block;
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ */
+button, select {
+    text-transform: none;
+}
+
+/* Accessible hidden elements
+   ========================================================================== */
+/**
+ * Ensure `hidden` elements are not displayed.
+ */
+[hidden] {
+    display: none;
 }

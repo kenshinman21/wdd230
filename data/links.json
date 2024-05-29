@@ -12,7 +12,8 @@
             "week": "Week02",
             "links": [
                 {"url": "../Week02/design.html", "title": "Web Design Principles"},
-                {"url": "https://codepen.io/kenshinman21/pen/oNRBvBM", "title": "Hamburger-Menu"}
+                {"url": "https://codepen.io/kenshinman21/pen/oNRBvBM", "title": "Hamburger-Menu"},
+                {"url": "../Week02/bom.html", "title": "DOM Manipulation"}
             ]
         },
         {

@@ -3,8 +3,7 @@
         {
             "week": "Week01",
             "links": [
-                {"url": "path/to/week1/activity1.html", "title": "Holy Grail"},
-                {"url": "path/to/week1/activity2.html", "title": "Assignment"}
+                {"url": "../Week01/holygrail.html", "title": "Holy Grail"}
             ]
         },
         {
@@ -29,7 +28,7 @@
             "week": "Week05",
             "links": [
                 {"url": "https://codepen.io/kenshinman21/pen/QWREzry", "title": "CSS Psuedo Elements"},
-                {"url": "Week 5/weather.html", "title": "Weather App"}
+                {"url": "../Week05/weather.html", "title": "Weather App"}
             ]
         },
         {

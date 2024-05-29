@@ -1,45 +1,45 @@
 {
     "weeks": [
         {
-            "week": "Week 1",
+            "week": "Week01",
             "links": [
-                {"url": "path/to/week1/activity1.html", "title": "Code Pen 1 for Week 1"},
-                {"url": "path/to/week1/activity2.html", "title": "Code Pen 2 for Week 1"}
+                {"url": "path/to/week1/activity1.html", "title": "Holy Grail"},
+                {"url": "path/to/week1/activity2.html", "title": "Assignment"}
             ]
         },
         {
-            "week": "Week 2",
+            "week": "Week02",
             "links": [
                 {"url": "path/to/week2/activity1.html", "title": "Code Pen 1 for Week 2"}
             ]
         },
         {
-            "week": "Week 3",
+            "week": "Week03",
             "links": [
                 {"url": "path/to/week3/activity1.html", "title": "Code Pen 1 for Week 3"}
             ]
         },
         {
-            "week": "Week 4",
+            "week": "Week04",
             "links": [
                 {"url": "path/to/week4/activity1.html", "title": "Code Pen 1 for Week 4"}
             ]
         },
         {
-            "week": "Week 5",
+            "week": "Week05",
             "links": [
                 {"url": "https://codepen.io/kenshinman21/pen/QWREzry", "title": "CSS Psuedo Elements"},
                 {"url": "Week 5/weather.html", "title": "Weather App"}
             ]
         },
         {
-            "week": "Week 6",
+            "week": "Week06",
             "links": [
                 {"url": "path/to/week6/activity1.html", "title": "Code Pen 1 for Week 6"}
             ]
         },
         {
-            "week": "Week 7",
+            "week": "Week07",
             "links": [
                 {"url": "path/to/week7/activity1.html", "title": "Code Pen 1 for Week 7"}
             ]

@@ -11,7 +11,7 @@
         {
             "week": "Week02",
             "links": [
-                {"url": "path/to/week2/activity1.html", "title": "Code Pen 1 for Week 2"}
+                {"url": "../Week02/design.html", "title": "Web Design Principles"}
             ]
         },
         {

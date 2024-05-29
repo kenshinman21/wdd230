@@ -1,7 +1,7 @@
 {
     "weeks": [
         {
-            "week": "Week01",
+            "week": "Week 01",
             "links": [
                 {"url": "../Week01/holygrail.html", "title": "Holy Grail"},
                 {"url": "https://codepen.io/kenshinman21/pen/oNRYKjY", "title": "Applied JavaScript"},
@@ -9,7 +9,7 @@
             ]
         },
         {
-            "week": "Week02",
+            "week": "Week 02",
             "links": [
                 {"url": "../Week02/design.html", "title": "Web Design Principles"},
                 {"url": "https://codepen.io/kenshinman21/pen/oNRBvBM", "title": "Hamburger-Menu"},
@@ -17,32 +17,32 @@
             ]
         },
         {
-            "week": "Week03",
+            "week": "Week 03",
             "links": [
-                {"url": "path/to/week3/activity1.html", "title": "Code Pen 1 for Week 3"}
+                {"url": "../week03/images/landscape.webp", "title": "WebP"}
             ]
         },
         {
-            "week": "Week04",
+            "week": "Week 04",
             "links": [
                 {"url": "path/to/week4/activity1.html", "title": "Code Pen 1 for Week 4"}
             ]
         },
         {
-            "week": "Week05",
+            "week": "Week 05",
             "links": [
                 {"url": "https://codepen.io/kenshinman21/pen/QWREzry", "title": "CSS Psuedo Elements"},
                 {"url": "../Week05/weather.html", "title": "Weather App"}
             ]
         },
         {
-            "week": "Week06",
+            "week": "Week 06",
             "links": [
                 {"url": "path/to/week6/activity1.html", "title": "Code Pen 1 for Week 6"}
             ]
         },
         {
-            "week": "Week07",
+            "week": "Week 07",
             "links": [
                 {"url": "path/to/week7/activity1.html", "title": "Code Pen 1 for Week 7"}
             ]

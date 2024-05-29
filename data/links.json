@@ -28,7 +28,8 @@
         {
             "week": "Week 04",
             "links": [
-                {"url": "https://codepen.io/kenshinman21/pen/WNBRjXQ", "title": "CSS Pseudo-Classes"}
+                {"url": "https://codepen.io/kenshinman21/pen/WNBRjXQ", "title": "CSS Pseudo-Classes"},
+                {"url": "Week04/images/css-combinators.JPG", "title": "CSS Combinators"}
             ]
         },
         {

@@ -20,7 +20,8 @@
             "week": "Week 03",
             "links": [
                 {"url": "../week03/images/landscape.webp", "title": "WebP"},
-                {"url": "../Week03/lazyload.html", "title": "Lazy Load"}
+                {"url": "../Week03/lazyload.html", "title": "Lazy Load"},
+                {"url": "../Week03/responsive-images.html", "title": "Responsive Images"}
             ]
         },
         {

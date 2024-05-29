@@ -11,7 +11,8 @@
         {
             "week": "Week02",
             "links": [
-                {"url": "../Week02/design.html", "title": "Web Design Principles"}
+                {"url": "../Week02/design.html", "title": "Web Design Principles"},
+                {"url": "https://codepen.io/kenshinman21/pen/oNRBvBM", "title": "Hamburger-Menu"}
             ]
         },
         {

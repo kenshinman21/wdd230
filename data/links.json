@@ -3,7 +3,8 @@
         {
             "week": "Week01",
             "links": [
-                {"url": "../Week01/holygrail.html", "title": "Holy Grail"}
+                {"url": "../Week01/holygrail.html", "title": "Holy Grail"},
+                {"url": "https://codepen.io/kenshinman21/pen/oNRYKjY", "title": "Applied JavaScript"}
             ]
         },
         {

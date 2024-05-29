@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* White background for the entire page */
+    color: #000000; /* All text is black */
+}
+
+header, footer {
+    background-color: #0077CC; /* A darker shade of light blue */
+    color: #000000; /* Black text */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px; /* Add a gap below the header */
+}
+
+main {
+    padding: 10px 20px; /* Slightly less padding around the content */
+    background-color: #0077CC; /* Consistent background color for the main */
+}
+
+section {
+    background-color: #ffffff; /* White background for each section */
+    border: 2px solid #0055AA; /* Even darker blue border */
+    padding: 20px; /* Padding inside each section */
+    margin-bottom: 10px; /* Space between sections */
+}
+
+footer {
+    margin-top: 10px; /* Add a gap above the footer */
+}

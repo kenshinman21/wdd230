@@ -1,0 +1,32 @@
+@media screen and (min-width: 500px) {
+    body {
+        background-color: #ffffff;
+    }
+    header {
+        background-color: black; 
+        color: #ffffff; 
+        padding: 20px;
+        text-align: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+        padding: 20px;
+        background-color: #ADD8E6; 
+        box-sizing: border-box;
+    }
+    section {
+        background-color: #ffffff; 
+        border: 2px solid #0077CC; 
+        padding: 20px; 
+        color: #000000; 
+        box-sizing: border-box;
+    }
+    footer {
+        background-color: #003366; 
+        color: black; 
+        padding: 20px;
+        text-align: center;
+    }
+}

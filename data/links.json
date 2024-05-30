@@ -39,20 +39,8 @@
             "links": [
                 {"url": "https://codepen.io/kenshinman21/pen/QWREzry", "title": "CSS Psuedo Elements"},
                 {"url": "../Week05/new-ward-members.html", "title": "JSON"},
-                {"url": "", "title": ""},
+                {"url": "../Week05/prophets.html", "title": "Fetch API"},
                 {"url": "../Week05/.html", "title": "Weather App"}
-            ]
-        },
-        {
-            "week": "Week 06",
-            "links": [
-                {"url": "path/to/week6/activity1.html", "title": "Code Pen 1 for Week 6"}
-            ]
-        },
-        {
-            "week": "Week 07",
-            "links": [
-                {"url": "path/to/week7/activity1.html", "title": "Code Pen 1 for Week 7"}
             ]
         }
     ]

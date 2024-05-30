@@ -1,0 +1,12 @@
+@media only screen and (min-width: 64rem) {
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin: auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Subtle shadow to highlight centered content */
+    }
+
+    /* Enhancing fieldsets for 3D appearance */
+    .wf1 fieldset {
+        box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Stronger shadow for 3D effect */
+    }
+}

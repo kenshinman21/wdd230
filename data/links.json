@@ -3,9 +3,9 @@
         {
             "week": "Week 01",
             "links": [
-                {"url": "../Week01/holygrail.html", "title": "Holy Grail"},
+                {"url": "Week01/holygrail.html", "title": "Holy Grail"},
                 {"url": "https://codepen.io/kenshinman21/pen/oNRYKjY", "title": "Applied JavaScript"},
-                {"url": "../Week01/media-query.html", "title": "Media Query"}
+                {"url": "Week01/media-query.html", "title": "Media Query"}
             ]
         },
         {
@@ -19,28 +19,28 @@
         {
             "week": "Week 03",
             "links": [
-                {"url": "../week03/images/landscape.webp", "title": "WebP"},
-                {"url": "../Week03/lazyload.html", "title": "Lazy Load"},
-                {"url": "../Week03/responsive-images.html", "title": "Responsive Images"},
-                {"url": "../Week03/bom.html", "title": "Web Storage API"}
+                {"url": "week03/images/landscape.webp", "title": "WebP"},
+                {"url": "Week03/lazyload.html", "title": "Lazy Load"},
+                {"url": "Week03/responsive-images.html", "title": "Responsive Images"},
+                {"url": "Week03/bom.html", "title": "Web Storage API"}
             ]
         },
         {
             "week": "Week 04",
             "links": [
                 {"url": "https://codepen.io/kenshinman21/pen/WNBRjXQ", "title": "CSS Pseudo-Classes"},
-                {"url": "../Week04/images/css-combinators.JPG", "title": "CSS Combinators"},
-                {"url": "../Week04/tablebuild.html", "title": "Data Presentation"},
-                {"url": "../Week04/form-start/Form-start/index.html", "title": "HTML Forms"}
+                {"url": "Week04/images/css-combinators.JPG", "title": "CSS Combinators"},
+                {"url": "Week04/tablebuild.html", "title": "Data Presentation"},
+                {"url": "Week04/form-start/Form-start/index.html", "title": "HTML Forms"}
             ]
         },
         {
             "week": "Week 05",
             "links": [
                 {"url": "https://codepen.io/kenshinman21/pen/QWREzry", "title": "CSS Psuedo Elements"},
-                {"url": "../Week05/new-ward-members.html", "title": "JSON"},
-                {"url": "../Week05/prophets.html", "title": "Fetch API"},
-                {"url": "../Week05/weather.html", "title": "Weather App"}
+                {"url": "Week05/new-ward-members.html", "title": "JSON"},
+                {"url": "Week05/prophets.html", "title": "Fetch API"},
+                {"url": "Week05/weather.html", "title": "Weather App"}
             ]
         }
     ]

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test JSON</title>
+</head>
+<body>
+  <div id="data-container"></div>
+  <script>
+    fetch('data/new-ward-members.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('data-container');
+        const content = `
+          <p>Family Name: ${data.familyName}</p>
+          <p>Moved In Date: ${data.movedInDate}</p>
+          <p>Number of People: ${data.numberOfPeople}</p>
+          <p>Visited By Bishopric: ${data.visitedByBishopric}</p>
+          <h3>Family Members:</h3>
+          ${data.familyMembers.map(member => `
+            <p>Name: ${member.name}, Gender: ${member.gender}, Birthdate: ${member.birthdate}</p>
+          `).join('')}
+        `;
+        container.innerHTML = content;
+      })
+      .catch(error => console.error('Error loading the JSON file:', error));
+  </script>
+</body>
+</html>

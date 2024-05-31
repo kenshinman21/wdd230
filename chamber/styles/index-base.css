@@ -10,13 +10,15 @@
     box-sizing: border-box;
 }
 #member-spotlight {
-    background-color: yellow; /* Change background to yellow */
-    margin-top: 30px; /* Add space above the section */
+    width: 100%; /* Use all horizontal space */
+    margin: 20px 0;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+    background-color: yellow; /* Background color for visibility */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Space out member details */
+    color: black; /* Text color for readability */
 }
+
 .member-detail {
     background-color: green; /* Keep individual member cards green */
     color: white; /* Text color for readability */
@@ -52,6 +54,13 @@ h1:first-of-type {
     margin: 0 auto; 
     width: 100px;
     height: auto;
+}
+#current-events, #weather-api {
+    background-color: green; /* Dark background for contrast */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: white; /* Ensures text is white */
 }
 .member-card.list-view {
     display: flex;
@@ -223,6 +232,9 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
 .membership-option {
     display: flex;
     align-items: center;
+}
+button:hover {
+    cursor: pointer;
 }
 .membership-option input {
     margin-right: 5px; 

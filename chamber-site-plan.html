@@ -36,7 +36,11 @@
             </p></div>
         </div>
         <div class="column right">
-            <div class="section"><img src="images/Purpose.jpg" alt="Purpose Image" height="75" width="100"></div>
+            <div class="section">
+                <img src="images/Purpose.jpg" alt="Purpose Image" height="75" width="100" id="purposeImage">
+                <button class="edit-image">Change Image</button>
+                <input type="file" accept="image/*" class="image-input" hidden>
+            </div>            
             <div class="section"><h2>Answers <button class="edit">edit</button></h2><p>This chamber will be holding educational eminars over small buisness.
             We will also host get togethers where we can network with fellow local buisnessmen. 
             You can find the contact information for the chamber's board of direcctors on the chamber webpage. 
@@ -46,14 +50,17 @@
             <div class="section"><p>Choice</p>Serif Font for Titles and buttons and sans serif for information sections</div>
         </div>
         <div class="section">
-            <h2>Small Screen Wireframe<button class="edit">edit</button></h2>
-            <img src="images/small-screen-wireframe.png" alt="Wireframe 1" class="wireframe-img">
-        </div>        
-        <div class="section wireframe-section">
-            <h2>Large Screen Wireframe</h2>
-            <img src="images/large-screen-wireframe.png" alt="Second Wireframe" class="wireframe-img2">
+            <h2>Small Screen Wireframe</h2>
+            <img src="images/small-screen-wireframe.png" alt="Small Screen Wireframe" class="wireframe-img" id="smallWireframe">
+            <button class="edit-image">Change Image</button>
+            <input type="file" accept="image/*" class="image-input" hidden>
         </div>
-        
+        <div class="section">
+            <h2>Large Screen Wireframe</h2>
+            <img src="images/large-screen-wireframe.png" alt="Large Screen Wireframe" class="wireframe-img" id="largeWireframe">
+            <button class="edit-image">Change Image</button>
+            <input type="file" accept="image/*" class="image-input" hidden>
+        </div>        
     <footer>
         <p>&copy; Isaac <span id="lastModified"></span></p>
         <img src="images/instagram-icon.png" alt="Instagram Icon" class="footer-img">

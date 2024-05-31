@@ -18,4 +18,10 @@
         border: 1px solid #004400; /* Slight border for more definition */
         margin-bottom: 20px; /* Ensures equal vertical spacing between sections */
     }
+    #homeButton {
+        padding: 15px;
+        font-size: 16px; 
+        top: 20px;
+        left: 20px;
+    }
 }

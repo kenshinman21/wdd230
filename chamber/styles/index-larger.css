@@ -211,15 +211,15 @@
         height: auto;
     }
     footer {
-        clear: both; /* Clears the previous floating elements */
-        position: relative; /* Position can be absolute if you want it always at the bottom */
-        width: 100%; /* Ensures it takes the full width */
+        clear: both; 
+        position: relative; 
+        width: 100%; 
         background-color: #006400;
         color: white;
         text-align: center;
         padding: 20px 0;
-        bottom: 20px 0;
-    }       
+        bottom: 20px;
+    }           
     .sidebar-content {
         background: #fffbeb;
         padding: 10px;

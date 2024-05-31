@@ -9,6 +9,23 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
+#member-spotlight {
+    background-color: yellow; /* Change background to yellow */
+    margin-top: 30px; /* Add space above the section */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+    display: flex;
+    justify-content: space-around;
+}
+.member-detail {
+    background-color: green; /* Keep individual member cards green */
+    color: white; /* Text color for readability */
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75); /* Shadow for 3D effect on each card */
+}
 #memberContainer.grid-view {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -225,7 +242,27 @@ button.form-submit-button {
 button.form-submit-button:hover {
     background-color: #45a049;
 }
-
+.event-banner {
+    background-color: #ffcc00; /* Yellow background */
+    color: black; /* Black text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Make sure it's on top */
+}
+#close-banner {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
 @media screen and (max-width: 650px) {
     body, html {
         margin: 0;

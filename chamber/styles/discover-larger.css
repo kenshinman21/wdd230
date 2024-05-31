@@ -5,6 +5,27 @@
         font-family: 'Inclusive Sans', sans-serif;
         background-color: #f4f4f4;
     }
+    @media screen and (min-width: 650px) {
+        .weather-api {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;  /* Adjust this based on your grid layout if necessary */
+            background-color: #008000;  /* Green background */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            color: white;
+            margin-top: 20px;
+            transform: translateZ(20px); /* 3D effect */
+            position: relative; /* Necessary for 3D positioning */
+        }
+        #weather-title {
+            text-align: center;
+            text-decoration: underline;
+        }
+        #forecast p {
+            margin-bottom: 5px; /* Space between forecast days */
+        }
+    }    
     header {
         display: grid;
         grid-template-columns: 1fr auto 1fr;

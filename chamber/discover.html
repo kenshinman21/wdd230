@@ -12,13 +12,13 @@
     <meta property="og:url" content="https://kenshinman21.github.io/wdd230/">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/discover-base.css">
-    <link rel="stylesheet" href="styles/discover-larger.css">
+    <link rel="stylesheet" href="styles/index-base.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/discover-fav.ico">
-    <title>Isaac Cano - WDD 230 - Chamber of Commerce</title>
+    <title>Isaac Cano - WDD 230 - Discover</title>
 </head>
 <body>
     <header>
@@ -31,11 +31,7 @@
             <form class="search-form" action="https://www.google.com/search" method="GET">
                 <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
                 <button type="submit">Submit</button>
-            </form>            
-        <div id="event-banner" class="event-banner">
-            <p>Join us for a Meet and Greet event this Wednesday at 7:00 PM!</p>
-            <button id="close-banner" aria-label="Close banner">✖</button>
-        </div>            
+            </form>                        
         </div>
         <div id="darkModeToggle" class="dark-mode-toggle">
             <div class="toggle-circle"></div>
@@ -44,9 +40,8 @@
     <nav>
         <div id="menuIcon">&#9776;</div>
         <ul id="menuItems">
-            <li><a href="../index.html" class="active">Home</a></li>
-            <li><a href="../chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="index.html" class="active">Chamber</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -71,28 +66,7 @@
                 <label for="comment-box">Comments:</label>
                 <textarea id="comment-box" name="comments"></textarea>
                 <button aria-label="Edit comments">Edit</button>
-            </div>
-            <div id="weather-api" class="weather-api">
-                <h2 id="weather-title">Weather</h2>
-                <p id="weather-location">Location: N/A</p>
-                <p id="current-temp">Temperature: N/A°C</p>
-                <p id="weather-desc">Condition: N/A</p>
-                <img id="weather-icon" src="" alt="Weather Icon">
-                <div id="forecast">
-                    <div>
-                        <p id="day1">Day 1: N/A</p>
-                        <img id="icon1" src="" alt="Day 1 Weather Icon">
-                    </div>
-                    <div>
-                        <p id="day2">Day 2: N/A</p>
-                        <img id="icon2" src="" alt="Day 2 Weather Icon">
-                    </div>
-                    <div>
-                        <p id="day3">Day 3: N/A</p>
-                        <img id="icon3" src="" alt="Day 3 Weather Icon">
-                    </div>
-                </div>
-            </div>            
+            </div>           
         </aside>       
         <main class="main-content">
             <div class="photo-grid">
@@ -144,13 +118,7 @@
                     </picture>
                     <figcaption>A serene lake in Nacogdoches, offering a tranquil retreat and picturesque views.</figcaption>
                 </figure>
-            </div>
-            <section id="member-spotlight" class="member-spotlight">
-                <h2>Member Spotlight</h2>
-                <div id="member1" class="member-detail"></div>
-                <div id="member2" class="member-detail"></div>
-                <div id="member3" class="member-detail"></div>
-            </section>                                              
+            </div>                                             
         </main>
     </div>
     <footer>

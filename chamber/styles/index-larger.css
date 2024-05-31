@@ -4,27 +4,6 @@
         padding: 0;
         font-family: 'Inclusive Sans', sans-serif;
         background-color: #f4f4f4;
-    }
-    @media screen and (min-width: 650px) {
-        .weather-api {
-            grid-column: 1 / 2;
-            grid-row: 4 / 5;  /* Adjust this based on your grid layout if necessary */
-            background-color: #008000;  /* Green background */
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            border-radius: 10px;
-            color: white;
-            margin-top: 20px;
-            transform: translateZ(20px); /* 3D effect */
-            position: relative; /* Necessary for 3D positioning */
-        }
-        #weather-title {
-            text-align: center;
-            text-decoration: underline;
-        }
-        #forecast p {
-            margin-bottom: 5px; /* Space between forecast days */
-        }
     }    
     header {
         display: grid;
@@ -33,6 +12,25 @@
         padding: 10px;
         background-color: #1B5E20;
         color: white;
+    }
+    .weather-api {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;  
+        background-color: #008000; 
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        color: white;
+        margin-top: 20px;
+        transform: translateZ(20px); /* 3D effect */
+        position: relative; 
+    }
+    #weather-title {
+        text-align: center;
+        text-decoration: underline;
+    }
+    #forecast p {
+        margin-bottom: 5px; 
     }
     .join-button {
         grid-column: 1;
@@ -173,7 +171,7 @@
     }
     .container {
         display: grid;
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
         background-color: #3E2723;
     }
@@ -181,7 +179,7 @@
         background: none;
     }
     .sticky-note {
-        background: #ffeb3b;
+        background: yellow;
         padding: 10px;
         margin: 5px 0;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -210,9 +208,7 @@
         background-color: #006400;
         color: white;
         text-align: center;
-        width: 100%;
-        padding: 0;
-        margin: 0;
+        padding: 20px;
     }
     .sidebar-content {
         background: #fffbeb;
@@ -270,4 +266,57 @@
         grid-column: 2 / 3; 
         margin-left: 0;
     }
+    .hero {
+        grid-column: 1 / -1; /* Assuming your container grid divides the space into three columns */
+        /* Ensures the hero image covers the full width */
+    }
+    .content-area {
+        display: grid;
+        grid-column: 2 / 4; /* Stretching from the second to the end of the grid */
+        grid-template-columns: 1fr 1fr; /* Two columns for current events and weather */
+    }
+    #current-events {
+        background-color: #008000;
+        color: white;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+        border-radius: 5px; /* Rounded corners */
+    }
+    #current-events, #weather-api {
+        grid-column: 1 / 4; /* Span across all three columns */
+    }   
+    .weather-api {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        background-color: #008000 !important;  
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        color: white !important;  
+        margin-top: 20px;
+        transform: translateZ(20px);
+        position: relative;
+    }
+    #member-spotlight {
+        display: grid;
+        grid-column: 1 / 4; /* Three equal columns */
+        gap: 20px;
+        align-items: start; /* Aligns the tops of the member cards */
+        grid-auto-rows: minmax(100px, auto); /* Minimum height with auto-adjustment for content */
+        padding: 20px;
+        margin-top: 20px; /* Adjust as needed */
+        background-color: yellow;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .member-detail {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures content is spaced evenly */
+    }   
 }

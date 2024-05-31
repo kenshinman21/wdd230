@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm Isaac Cano and the purpose of this website is for completing a WDD 230 - Web Frontend Development assignment
+    that is the home page for my Chamber of Commerce website.">
+    <meta name="author" content="Isaac Cano">
+    <meta property="og:title" content="Chamber">
+    <meta property="og:description" content="A website for a school assignment.">
+    <meta property="og:image" content="https://stockcake.com/i/office-desktop-setup_869927_1006605">
+    <meta property="og:url" content="https://kenshinman21.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index-base.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="#">
+    <title>Isaac Cano - WDD 230 - Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="join-button">
+            <a href="join.html">Join Now!</a>
+        </div>
+        <div class="profile">
+            <img src="images/Team_Member.png" alt="My Profile Picture" width="75" height="100" loading="lazy">
+            <span>Isaac Cano</span>
+            <form class="search-form" action="https://www.google.com/search" method="GET">
+                <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
+                <button type="submit">Submit</button>
+            </form>                       
+        </div>
+        <div id="event-banner" class="event-banner">
+            <p>Join us for a Meet and Greet event this Wednesday at 7:00 PM!</p>
+            <button id="close-banner" aria-label="Close banner">✖</button>
+        </div>
+        <div id="darkModeToggle" class="dark-mode-toggle">
+            <div class="toggle-circle"></div>
+        </div>
+    </header>
+    <nav>
+        <div id="menuIcon">&#9776;</div>
+        <ul id="menuItems">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html" class="active">Chamber</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sticky-note" onclick="toggleContent('demographics-content')">Demographics:</div>
+            <p id="demographics-content" class="sidebar-content" style="display:none;">Show Demographics for users' visits</p>
+            <div class="sticky-note" onclick="toggleContent('statistical-data-content')">
+                Statistical Data: <span id="visitMessage">Loading...</span>
+            </div>
+            <p id="statistical-data-content" class="sidebar-content" style="display:none;">Show data about the site</p>
+            <div class="sticky-note" onclick="toggleContent('events-content')">Events:</div>
+            <p id="events-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('attractions-content')">Attractions:</div>
+            <p id="attractions-content" class="sidebar-content" style="display:none;">Description</p>
+            
+            <div class="sticky-note" onclick="toggleContent('calendar-content')">Calendar:</div>
+            <div id="calendar-content" class="sidebar-content" style="display:none;">Calendar UI</div>
+            
+            <div class="sticky-note" onclick="toggleContent('comments-content')">Comments:</div>
+            <div id="comments-content" class="sidebar-content" style="display:none;">
+                <label for="comment-box">Comments:</label>
+                <textarea id="comment-box" name="comments"></textarea>
+                <button aria-label="Edit comments">Edit</button>
+            </div>
+        </aside>
+        <main>
+            <h1>Chamber of Commerce</h1>
+        <div class="hero">
+                <picture>
+                    <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                    <img src="../images/hero-large.webp" alt="hero photo of the Houston Texas Temple" width="500" height="250" loading="lazy">
+                </picture>
+                <span>Houston Texas Temple</span>
+        </div>
+        <div class="content-area">
+            <div id="current-events">
+                <h2>Current Events</h2>
+                <div>
+                    <p id="current-event1-name">Current Event 1: N/A</p>
+                    <p id="current-event1-description">Description: N/A</p>
+                </div>
+                <div>
+                    <p id="current-event2-name">Current Event 2: N/A</p>
+                    <p id="current-event2-description">Description: N/A</p>
+                </div>
+                <div>
+                    <p id="current-event3-name">Current Event 3: N/A</p>
+                    <p id="current-event3-description">Description: N/A</p>
+                </div>
+            </div>
+            <div id="weather-api" class="weather-api">
+            <h2 id="weather-title">Weather</h2>
+            <p id="weather-location">Location: N/A</p>
+            <p id="current-temp">Temperature: N/A°C</p>
+            <p id="weather-desc">Condition: N/A</p>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <div id="forecast">
+                <div>
+                    <p id="day1">Day 1: N/A</p>
+                    <img id="icon1" src="" alt="Day 1 Weather Icon">
+                </div>
+                <div>
+                    <p id="day2">Day 2: N/A</p>
+                    <img id="icon2" src="" alt="Day 2 Weather Icon">
+                </div>
+                <div>
+                    <p id="day3">Day 3: N/A</p>
+                    <img id="icon3" src="" alt="Day 3 Weather Icon">
+                </div>
+            </div>
+        </div>
+        <section id="member-spotlight" class="member-spotlight">
+            <h2>Member Spotlight</h2>
+            <div id="member1" class="member-detail"></div>
+            <div id="member2" class="member-detail"></div>
+            <div id="member3" class="member-detail"></div>
+        </section>
+        </main>
+    </div>
+        <footer>
+            <a href="directory.html" class="directory-button">Directory</a>
+            <p id="copyright">Isaac Cano, US</p>
+            <p id="lastModified"></p>
+            <p>Number of visits to the page: <span id="visitCount">121</span></p> 
+        </footer>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburger-menu.js"></script>
+        <script src="scripts/dark-mode-toggle.js"></script>
+        <script src="scripts/dynamic-style.js"></script>
+        <script src="scripts/searchbar.js"></script>
+        <script src="scripts/page-visits.js"></script>
+        <script src="scripts/discover.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/higher-ranked-members.js"></script>
+        <script src="scripts/banner.js"></script> 
+        <script src="scripts/current-events.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "events": [
+        {
+            "name": "Summer Festival",
+            "description": "Join us for a summer of fun and music!"
+        },
+        {
+            "name": "Art Exhibit",
+            "description": "Explore the local art scene with our annual exhibit."
+        },
+        {
+            "name": "Book Fair",
+            "description": "Find your next great read at our community book fair."
+        }
+    ]
+}

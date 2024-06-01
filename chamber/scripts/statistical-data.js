@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const stickyNote = document.querySelector('.sticky-note');
+    const statisticalStickyNote = document.querySelector('.sticky-note[onclick*="statistical-data-content"]');
 
     // Define the array of data from which to draw random information
     const siteData = [
@@ -11,26 +11,28 @@ document.addEventListener('DOMContentLoaded', function() {
         "Number of new subscribers today: 15"
     ];
 
-    // Function to update content
-    function updateContent() {
+    function toggleStatisticalDataContent() {
         const contentElement = document.getElementById('statistical-data-content');
-
-        // Select three random pieces of data
-        let randomData = [];
-        for (let i = 0; i < 3; i++) {
-            let randomIndex = Math.floor(Math.random() * siteData.length);
-            randomData.push(siteData[randomIndex]);
+        contentElement.style.display = (contentElement.style.display === 'none' ? 'block' : 'none');
+        if (contentElement.style.display === 'block') {
+            updateContent();
         }
-
-        // Update the content of the paragraph
-        contentElement.innerHTML = randomData.join('<br>'); // Join the array elements with a line break
     }
 
-    // Event listener for the sticky note click
-    stickyNote.onclick = function() {
-        updateContent(); // Call function to update content
-        const contentElement = document.getElementById('statistical-data-content');
-        // Toggle the display style
-        contentElement.style.display = (contentElement.style.display === 'none' ? 'block' : 'none');
-    };
+    function updateContent() {
+        let usedIndices = new Set();
+        let randomData = [];
+
+        while (randomData.length < 3) {
+            let randomIndex = Math.floor(Math.random() * siteData.length);
+            if (!usedIndices.has(randomIndex)) {
+                usedIndices.add(randomIndex);
+                randomData.push(siteData[randomIndex]);
+            }
+        }
+
+        document.getElementById('statistical-data-content').textContent = randomData.join('\n');
+    }
+
+    statisticalStickyNote.onclick = toggleStatisticalDataContent;
 });

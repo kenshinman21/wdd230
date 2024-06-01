@@ -51,25 +51,29 @@
     <div class="container">
         <aside class="sidebar">
             <div class="sticky-note" onclick="toggleContent('demographics-content')">Demographics:</div>
-            <p id="demographics-content" class="sidebar-content" style="display:none;">Show Demographics for users' visits</p>
+            <p id="demographics-content" class="sidebar-content" style="display:none;">
+            <strong>Name:</strong> <span id="name">Loading...</span><br>
+            <strong>Location:</strong> <span id="location">Loading...</span><br>
+            <strong>Gender:</strong> <span id="gender">Loading...</span><br>
+            <strong>Age:</strong> <span id="age">Loading...</span>
+            </p>
             <div class="sticky-note" onclick="toggleContent('statistical-data-content')">
                 Statistical Data: <span id="visitMessage">Loading...</span>
             </div>
             <p id="statistical-data-content" class="sidebar-content" style="display:none;">Show data about the site</p>
             <div class="sticky-note" onclick="toggleContent('events-content')">Events:</div>
-            <p id="events-content" class="sidebar-content" style="display:none;">Description</p>
-            
+            <p id="events-content" class="sidebar-content" style="display:none;">Description</p>     
             <div class="sticky-note" onclick="toggleContent('attractions-content')">Attractions:</div>
             <p id="attractions-content" class="sidebar-content" style="display:none;">Description</p>
-            
             <div class="sticky-note" onclick="toggleContent('calendar-content')">Calendar:</div>
-            <div id="calendar-content" class="sidebar-content" style="display:none;">Calendar UI</div>
-            
+            <div id="calendar-content" class="sidebar-content" style="display:none;">
+            <input type="text" id="datepicker" placeholder="Click here" readonly>
+            </div>
             <div class="sticky-note" onclick="toggleContent('comments-content')">Comments:</div>
             <div id="comments-content" class="sidebar-content" style="display:none;">
-                <label for="comment-box">Comments:</label>
-                <textarea id="comment-box" name="comments"></textarea>
-                <button aria-label="Edit comments">Edit</button>
+            <ul id="comments-list"></ul> 
+            <textarea id="comment-box" name="comments" placeholder="Write your comment here..."></textarea>
+            <button id="save-comment">Add Comment</button>
             </div>
         </aside>
 <main>

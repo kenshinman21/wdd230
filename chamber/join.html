@@ -41,16 +41,11 @@
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
         </ul>
-    </nav>
-    <div id="cookieConsentBanner">
-        This website uses cookies to ensure you get the best experience on our website.
-        <button onclick="acceptCookies()">Accept</button>
-        <button onclick="rejectCookies()">Reject</button>
-    </div>
+    </nav>   
     <div class="container">
         <aside class="sidebar">
             <div class="sticky-note" onclick="toggleContent('demographics-content'); displayDemographics();">Demographics:</div>
-            <p id="demographics-content" class="sidebar-content" style="display:none;">Loading demographics...</p>
+            <p id="demographics-content" class="sidebar-content" style="display:none;">Loading demographics...</p>            
             <div class="sticky-note" onclick="toggleContent('statistical-data-content')">
                 Statistical Data: <span id="visitMessage">Loading...</span>
             </div>
@@ -232,6 +227,5 @@
     <script src="scripts/searchbar.js"></script>
     <script src="scripts/page-visits.js"></script>
     <script src="scripts/discover.js"></script>
-    <script src="scripts/cookieHandling.js" defer></script>
 </body>
 </html>

@@ -28,14 +28,15 @@
             <a href="join.html">Join Now!</a>
         </div>
         <div class="profile">
-            <img src="images/Team_Member.png" alt="My Profile Picture" width="75" height="100" loading="lazy">
+            <img src="images/Team_Member.png" alt="My Profile Picture" aria-label="Profile picture of Isaac Cano" width="75" height="100" loading="lazy">
             <span>Isaac Cano</span>
+            
             <form class="search-form" action="https://www.google.com/search" method="GET">
-                <label for="siteSearch" class="visually-hidden"></label>
+                <label for="siteSearch" class="visually-hidden">Search through Google</label>
                 <input type="search" id="siteSearch" name="q" aria-label="Search through site content" placeholder="Search">
-                <button type="submit">Submit</button>
-            </form>                      
-        </div>
+                <button type="submit" aria-label="Submit search">Submit</button>
+            </form>
+        </div>        
         <div id="event-banner" class="event-banner">
             <p>Join us for a Meet and Greet event this Wednesday at 7:00 PM!</p>
             <button id="close-banner" aria-label="Close banner">✖</button>

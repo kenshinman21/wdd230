@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <link rel="icon" type="image/x-icon" href="images/Chamber_of_Commerce.ico">
     <title>Isaac Cano - WDD 230 - Chamber of Commerce</title>
 </head>
@@ -67,12 +69,14 @@
             <div class="sticky-note" onclick="toggleContent('attractions-content')">Attractions:</div>
             <p id="attractions-content" class="sidebar-content" style="display:none;">Description</p>
             <div class="sticky-note" onclick="toggleContent('calendar-content')">Calendar:</div>
-            <div id="calendar-content" class="sidebar-content" style="display:none;">Calendar UI</div>
+            <div id="calendar-content" class="sidebar-content" style="display:none;">
+            <input type="text" id="datepicker" placeholder="Click here" readonly>
+            </div>
             <div class="sticky-note" onclick="toggleContent('comments-content')">Comments:</div>
             <div id="comments-content" class="sidebar-content" style="display:none;">
-                <label for="comment-box">Comments:</label>
-                <textarea id="comment-box" name="comments"></textarea>
-                <button aria-label="Edit comments">Edit</button>
+            <ul id="comments-list"></ul> 
+            <textarea id="comment-box" name="comments" placeholder="Write your comment here..."></textarea>
+            <button id="save-comment">Add Comment</button>
             </div>
         </aside>
         <main>
@@ -149,5 +153,9 @@
         <script src="scripts/current-events.js"></script>
         <script src="scripts/demographics.js"></script>
         <script src="scripts/statistical-data.js"></script>
+        <script src="scripts/attractions.js"></script>
+        <script src="scripts/events.js"></script>
+        <script src="scripts/calender-setup.js" defer></script>
+        <script src="scripts/comments.js"></script>
 </body>
 </html>

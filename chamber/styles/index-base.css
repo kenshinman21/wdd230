@@ -9,6 +9,16 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
+.sticky-note::after {
+    content: '↓';
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+#calendar-content:target .sticky-note::after,
+#calendar-content:not([style*="display: none"]) .sticky-note::after {
+    transform: rotate(180deg);
+}
 #cookieConsentBanner {
     display: none;
     color: white;
@@ -421,6 +431,9 @@ button.form-submit-button:hover {
         padding: 10px;
         box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
         cursor: pointer;
+    }
+    .sticky-note:hover {
+        background-color: #eef;
     }
     .hamburger-menu {
         display: block; 

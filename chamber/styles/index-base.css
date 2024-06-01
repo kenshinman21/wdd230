@@ -9,6 +9,16 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
+#cookieConsentBanner {
+    display: none;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: green;
+    padding: 10px;
+    text-align: center;
+}
 #member-spotlight {
     width: 100%; /* Use all horizontal space */
     margin: 20px 0;
